@@ -16,9 +16,40 @@ h6 {
 	text-rendering: optimizelegibility;
 }
 
+//
+// Header with line
+//
+
+
 h1 {
 	@include baseline-dimensions(3,3,3);
+	color: $alpha-text-color;
+	width: auto !important;
+	font-size: 1.6em;
 }
+
+.line-title {
+	margin-top: 5em;
+	margin-bottom: 2.5em;
+}
+
+.line-title-text {
+	background-color: $bg;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-left: -0.5em;
+	padding-top: -3em;
+}
+
+hr {
+	margin-bottom: -1.8em;
+	border: 1px solid $alpha-text-color;
+}
+
+
+//
+// Other headers
+//
 
 h2 {
 	@include baseline-dimensions(2,3,3);

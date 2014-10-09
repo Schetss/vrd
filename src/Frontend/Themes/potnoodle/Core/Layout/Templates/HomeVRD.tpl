@@ -10,10 +10,10 @@
 	{* Header *}
 	{include:Core/Layout/Templates/Header.tpl}
 
+
 	<main id="main" class="holder main-holder" role="main">
 
 		<div id="selector">
-
 		<div class="selector-picture">
 			<a href="#">
 				<p class="selector-name">
@@ -53,6 +53,17 @@
 			</a>
 		</div>
 
+	</div>
+	
+	<div class="clear"></div>
+
+	<div class="line-title">
+		<hr />
+
+		<div class="row">
+			<h1><span class="line-title-text">VRD staat niet stil</span></h1>
+		</div>
+		<div class="clear"></div>
 	</div>
 
 		<div class="row">

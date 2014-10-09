@@ -997,7 +997,25 @@ h1 {
   font-size: 2.827145944em;
   line-height: 1.2379976377;
   padding-top: 0.4642491141em;
-  padding-bottom: 0.4642491141em; }
+  padding-bottom: 0.4642491141em;
+  color: #404041;
+  width: auto !important;
+  font-size: 1.6em; }
+
+.line-title {
+  margin-top: 5em;
+  margin-bottom: 2.5em; }
+
+.line-title-text {
+  background-color: #f9fdff;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: -0.5em;
+  padding-top: -3em; }
+
+hr {
+  margin-bottom: -1.8em;
+  border: 1px solid #404041; }
 
 h2 {
   font-size: 1.999396em;
@@ -1658,6 +1676,34 @@ button {
     color: #f9fdff;
     font-size: 1.2em;
     font-weight: 600; }
+
+article {
+  clear: both;
+  padding-bottom: 3em;
+  margin-bottom: 3em;
+  border-bottom: 1px solid #bdbcbf; }
+  article .left {
+    width: 40%;
+    height: 250px;
+    overflow: hidden;
+    float: left; }
+  article .right {
+    width: 57%;
+    float: right; }
+    article .right h2 {
+      padding-top: 0;
+      margin-top: -0.3em;
+      padding-bottom: 0; }
+  article .date {
+    font-size: 0.9em;
+    color: #bdbcbf;
+    margin-top: -0.5em; }
+  article .readmore {
+    padding-top: 0; }
+
+article:last-child {
+  border: 0;
+  padding-bottom: 1em; }
 
 @media print {
   * {
