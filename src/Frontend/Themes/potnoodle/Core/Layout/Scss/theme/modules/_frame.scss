@@ -1,0 +1,104 @@
+//
+// Frame
+//
+
+.holder {
+	background-color: $bg;
+	@include padding-tb(0,0);
+
+	@include mq($bp4) {
+		@include padding-tb(0,0);
+	}
+}
+
+//
+// Header
+//
+
+.header {
+	border-bottom: 3px solid $alpha-ui-color;
+
+	.inner-header {
+		border-bottom: 1px solid $beta-ui-color;
+
+		.inner-inner-header {
+			position: relative;
+
+			.slogan {
+				position: absolute;
+				margin-left: 200px;
+				margin-top: 20px;
+			}
+
+		}
+	}
+
+
+}
+
+	.header .inner {
+		@extend %clearfix;
+		border-bottom: 1px solid lighten($alpha-text-color,60);
+	}
+
+.header-holder {
+	@include mq($bp3) {
+		@include padding-top(0);
+	}
+}
+
+	.header-holder .inner {
+		@include mq($bp3) {
+			@include padding-tb(1,0);
+		}
+
+		@include mq($bp4) {
+			@include padding-tb(2,0);
+		}
+	}
+
+.logo {
+	float: left;
+	font-family: $alpha-font-family;
+	font-style: italic;
+	font-weight: $alpha-font-weight;
+	@include text-dimensions($alpha-font-size,1,1);
+
+	@include mq($bp3) {
+		float: left;
+		@include text-dimensions(14,1,0);
+	}
+}
+
+//
+// Doormat
+//
+
+.doormat-holder {
+	@include padding-bottom(1);
+
+	@include mq($bp4) {
+		@include padding-bottom(2);
+	}
+}
+
+	.doormat-col-4 {
+		@include box-(12,1,1);
+
+		@include mq($bp4) {
+			@include box-(4,1,1);
+		}
+	}
+
+//
+// Footer
+//
+
+.footer-holder {
+	background-color: $alpha-ui-color;
+	color: lighten($alpha-text-color,70);
+	@include padding-tb(0.5,0.5);
+	font-size: 0.9em;
+	text-align: center;
+
+}

@@ -1,0 +1,158 @@
+// Navigation
+
+.main-nav {
+	float: left;
+	width: 100%;
+
+	ul {
+		@extend %clearfix;
+		font-family: $alpha-font-family;
+		@include list-nav;
+		@include text-dimensions($alpha-font-size,1,1);
+	}
+
+	a {
+		color: lighten($alpha-text-color,50);
+		text-decoration: none;
+		font-weight: $beta-font-weight;
+	}
+
+	a:hover,
+	.selected a {
+		color: darken($alpha-ui-color,0);
+	}
+}
+
+.mobile-nav .main-nav {
+	display: none;
+}
+
+.main-nav,
+.mobile-nav .main-nav {
+	@include mq($bp3) {
+		display: block !important;
+		width: 100%;
+		float: left;
+		font-size: 1.05em;
+
+		ul {
+			float: left;
+			@include horizontal-nav();
+			@include text-dimensions(14,1,0);
+		}
+
+		li {
+			// @include px-margin-lr(1,0);
+			@include padding-tb(0.4, 0.4);
+			margin-right: 2em;
+		}
+
+		.main-nav-extra {
+			float: right;
+			li {
+				margin-right: 0em !important;
+			}
+		}
+
+	}
+
+}
+
+.main-nav-trigger {
+	//dihttp://vrdfork:8888/nlsplay: block;
+	float: right;
+	width: 2.1em;
+	height: 2.1em;
+	text-indent: -9999px;
+	@include text-dimensions($alpha-font-size,1,1);
+	@include svg-bg("../img/icon-menu", ".png", $alpha-text-color, 50%, no-repeat);
+
+	@include mq($bp3) {
+		display: none;
+	}
+}
+
+.svg .trigger-active,
+.trigger-active {
+	background-color: $alpha-link-color;
+}
+
+
+
+// language Navigation
+
+.lan-nav {
+	float: right;
+
+	ul {
+		margin-top: 20px;
+		float: right;
+		@include horizontal-nav();
+		@include text-dimensions(14,1,0);
+	}
+
+	li {
+		color: $bg;
+		background-color: $alpha-ui-color;
+		margin-left: 1.1em;
+		@include padding-tb(0.05,0.05);
+		padding-left: 0.3em;
+		padding-right: 0.3em;
+	}
+}
+
+
+// Image navigation index
+
+
+#selector {
+
+	.selector-picture {
+		width: 24.9%;
+		float: left;
+		margin-right: 0.13%;
+		overflow: hidden;
+		height: 400px;
+		.selector-img {
+			max-width: 710px;
+		}
+
+		p {
+			@include background-opacity($alpha-link-color, 0.85);
+			position: absolute;
+			width: 24.9%;
+			height: 50px;
+			margin-top: 350px;
+			text-align: center;
+			padding-top: 10px;
+			color: $bg;
+			font-size: 1.1em;
+			font-weight: 600;
+		}
+	}
+
+	.selector-picture-right {
+		width: 24.9%;
+		float: right;
+		overflow: hidden;
+		height: 400px;
+
+		.selector-img {
+			max-width: 710px;
+		}
+
+		p {
+			@include background-opacity($alpha-link-color, 0.85);
+			position: absolute;
+			width: 24.9%;
+			height: 50px;
+			margin-top: 350px;
+			text-align: center;
+			padding-top: 10px;
+			color: $bg;
+			font-size: 1.2em;
+			font-weight: 600;
+		}
+	}
+
+}
