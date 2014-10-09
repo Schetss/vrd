@@ -15,7 +15,7 @@
 
 		<div id="selector">
 		<div class="selector-picture">
-			<a href="#">
+			<a href="/nl/distributie">
 				<p class="selector-name">
 					Distributie
 				</p>
@@ -25,7 +25,7 @@
 		</div>
 
 		<div class="selector-picture">
-			<a href="#">
+			<a href="/nl/transport">
 				<p class="selector-name">
 					Transport
 				</p>
@@ -35,7 +35,7 @@
 
 
 		<div class="selector-picture">
-			<a href="#">
+			<a href="/nl/opslag-fijnpikking">
 				<p class="selector-name">
 					Opslag &amp; fijnpikking
 				</p>
@@ -45,7 +45,7 @@
 
 
 		<div class="selector-picture-right">
-			<a href="#">
+			<a href="/nl/immo">
 				<p class="selector-name">
 					Immo
 				</p>
@@ -61,14 +61,13 @@
 		<hr />
 
 		<div class="row">
-			<h1><span class="line-title-text">VRD staat niet stil</span></h1>
+			<h3><span class="line-title-text">VRD staat niet stil</span></h3>
 		</div>
 		<div class="clear"></div>
 	</div>
 
 		<div class="row">
 			<div class="main">
-
 
 				{* Main position *}
 				{option:positionMain}

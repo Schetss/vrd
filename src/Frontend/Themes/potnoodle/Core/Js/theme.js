@@ -5,7 +5,7 @@ var jsTheme =
 	{
 		jsTheme.mobileNav.init();
 		jsTheme.forms.init();
-		console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
+	//	console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
 	}
 
 };
@@ -57,3 +57,38 @@ jsTheme.forms =
 };
 
 $(jsTheme.init);
+
+
+
+//
+// JQuery
+//
+
+
+//
+// retina display
+//
+
+// Set pixelRatio to 1 if the browser doesn't offer it up.
+var pixelRatio = !!window.devicePixelRatio ? window.devicePixelRatio : 1;
+ 
+// Rather than waiting for document ready, where the images
+// have already loaded, we'll jump in as soon as possible.
+$(window).on("load", function() {
+    if (pixelRatio > 1) {
+        $('.retina').each(function() {
+ 
+            // Very naive replacement that assumes no dots in file names.
+            $(this).attr('src', $(this).attr('src').replace(".","@2x."));
+        });
+    }
+
+    $('.main-text .text').addClass('row');
+    
+
+});
+
+
+
+
+

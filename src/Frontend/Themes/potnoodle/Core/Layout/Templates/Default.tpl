@@ -11,17 +11,45 @@
 	{include:Core/Layout/Templates/Header.tpl}
 
 	<main id="main" class="holder main-holder" role="main">
-		<div class="row">
-			<div class="main">
-				{include:Core/Layout/Templates/Breadcrumb.tpl}
-
+		<div class="main-header">
+			<div class="main-header-image">
+				{* Image position *}
+				{option:positionImage}
+					{iteration:positionImage}
+					{option:!positionImage.blockIsHTML}
+						{$positionImage.blockContent}
+					{/option:!positionImage.blockIsHTML}
+					{option:positionImage.blockIsHTML}
+						{$positionImage.blockContent}
+					{/option:positionImage.blockIsHTML}
+					{/iteration:positionImage}
+				{/option:positionImage}
+			</div>	
+			<div class="image-overlay"></div>
+			<div class="row main-header-title">
 				{* Page title *}
 				{option:!hideContentTitle}
 					<header>
 						<h1>{$page.title}</h1>
 					</header>
 				{/option:!hideContentTitle}
+			</div>
+		</div>
 
+		<div class="bluebox row">
+			{* Bluebox position *}
+			{option:positionBluebox}
+				{iteration:positionBluebox}
+				{option:!positionBluebox.blockIsHTML}
+					{$positionBluebox.blockContent}
+				{/option:!positionBluebox.blockIsHTML}
+				{option:positionBluebox.blockIsHTML}
+					{$positionBluebox.blockContent}
+				{/option:positionBluebox.blockIsHTML}
+				{/iteration:positionBluebox}
+			{/option:positionBluebox}
+		</div>
+			<div class="main main-text">
 				{* Main position *}
 				{option:positionMain}
 					{iteration:positionMain}
@@ -34,7 +62,6 @@
 					{/iteration:positionMain}
 				{/option:positionMain}
 			</div>
-		</div>
 	</main>
 
 	{* Footer *}

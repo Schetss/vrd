@@ -70,6 +70,88 @@
 	}
 }
 
+
+// 
+// Main header 
+//
+
+.main-header {
+	padding: 0;
+	margin-top: 0;
+	position: relative;
+
+	p {
+		padding: 0;
+	}
+
+	h1 {
+		margin-top: 2em;
+		position: absolute;
+		top: 0;
+		padding: 0;
+	}
+}
+
+.main-header-image {
+	height: 220px;
+	overflow: hidden;
+}
+
+.image-overlay {
+	@include background-opacity(black, 0.4);
+	height: 220px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.main-header-title {
+
+}
+
+//
+// bluebox
+//
+
+.bluebox {
+	background-color: $alpha-ui-color;
+	color: $beta-text-color;
+	@include padding-tb (0.8,0.8);
+	@include px-padding-lr(5,5);
+
+
+	p {
+		font-size: 1.04em;
+		line-height: 2.5em;
+	}
+}
+
+
+//
+// Main 
+//
+
+#main {
+	padding-bottom: 4em;
+
+	.text {
+		p {
+			font-family: $delta-font-family;
+			font-size: 1.25em;
+		}
+	}
+}
+
+//
+// main blog
+//
+
+.blog-index {
+	margin-top: 3em;
+}
+
+
+
 //
 // Doormat
 //

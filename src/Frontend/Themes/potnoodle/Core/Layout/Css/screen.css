@@ -112,7 +112,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
 
 .row {
   margin: 0 auto;
-  max-width: 60em; }
+  max-width: 52.5em; }
   .row .row {
     padding: 0; }
 
@@ -128,7 +128,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
     float: right; } }
 
 .grid-1 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -176,7 +176,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-2 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -224,7 +224,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-3 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -232,47 +232,47 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
 
 @media (min-width: 30em) {
   .bp2-grid-3 {
-    width: 25%;
+    width: 25.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 @media (min-width: 42.5em) {
   .grid-3 {
-    width: 25%;
+    width: 25.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
 
   .bp3-grid-3 {
-    width: 25%;
+    width: 25.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
 
   .push-left-3 {
-    left: 25%; }
+    left: 25.0%; }
 
   .pull-left-3 {
-    left: -25%; } }
+    left: -25.0%; } }
 @media (min-width: 60em) {
   .bp4-grid-3 {
-    width: 25%;
+    width: 25.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 @media (min-width: 71.25em) {
   .bp5-grid-3 {
-    width: 25%;
+    width: 25.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-4 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -320,7 +320,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-5 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -368,7 +368,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-6 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -376,47 +376,47 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
 
 @media (min-width: 30em) {
   .bp2-grid-6 {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 @media (min-width: 42.5em) {
   .grid-6 {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
 
   .bp3-grid-6 {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
 
   .push-left-6 {
-    left: 50%; }
+    left: 50.0%; }
 
   .pull-left-6 {
-    left: -50%; } }
+    left: -50.0%; } }
 @media (min-width: 60em) {
   .bp4-grid-6 {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 @media (min-width: 71.25em) {
   .bp5-grid-6 {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-7 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -464,7 +464,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-8 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -512,7 +512,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-9 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -520,47 +520,47 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
 
 @media (min-width: 30em) {
   .bp2-grid-9 {
-    width: 75%;
+    width: 75.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 @media (min-width: 42.5em) {
   .grid-9 {
-    width: 75%;
+    width: 75.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
 
   .bp3-grid-9 {
-    width: 75%;
+    width: 75.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
 
   .push-left-9 {
-    left: 75%; }
+    left: 75.0%; }
 
   .pull-left-9 {
-    left: -75%; } }
+    left: -75.0%; } }
 @media (min-width: 60em) {
   .bp4-grid-9 {
-    width: 75%;
+    width: 75.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 @media (min-width: 71.25em) {
   .bp5-grid-9 {
-    width: 75%;
+    width: 75.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-10 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -608,7 +608,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-11 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -656,7 +656,7 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
     padding-left: 10px;
     padding-right: 10px; } }
 .grid-12 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -664,41 +664,41 @@ article, aside, figure, footer, header, hgroup, nav, section, main {
 
 @media (min-width: 30em) {
   .bp2-grid-12 {
-    width: 100%;
+    width: 100.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 @media (min-width: 42.5em) {
   .grid-12 {
-    width: 100%;
+    width: 100.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
 
   .bp3-grid-12 {
-    width: 100%;
+    width: 100.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
 
   .push-left-12 {
-    left: 100%; }
+    left: 100.0%; }
 
   .pull-left-12 {
-    left: -100%; } }
+    left: -100.0%; } }
 @media (min-width: 60em) {
   .bp4-grid-12 {
-    width: 100%;
+    width: 100.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; } }
 @media (min-width: 71.25em) {
   .bp5-grid-12 {
-    width: 100%;
+    width: 100.0%;
     float: left;
     position: relative;
     padding-left: 10px;
@@ -993,18 +993,19 @@ h6 {
   font-weight: 400;
   text-rendering: optimizelegibility; }
 
-h1 {
+h3 {
   font-size: 2.827145944em;
   line-height: 1.2379976377;
   padding-top: 0.4642491141em;
   padding-bottom: 0.4642491141em;
   color: #404041;
   width: auto !important;
-  font-size: 1.6em; }
+  font-size: 1.2em;
+  font-weight: bold; }
 
 .line-title {
-  margin-top: 5em;
-  margin-bottom: 2.5em; }
+  margin-top: 3.5em;
+  margin-bottom: 2em; }
 
 .line-title-text {
   background-color: #f9fdff;
@@ -1014,20 +1015,22 @@ h1 {
   padding-top: -3em; }
 
 hr {
-  margin-bottom: -1.8em;
+  margin-bottom: -1.4em;
   border: 1px solid #404041; }
 
-h2 {
-  font-size: 1.999396em;
-  line-height: 1.3128964947;
-  padding-top: 0.6564482474em;
-  padding-bottom: 0.6564482474em; }
+h1 {
+  font-size: 2.827145944em;
+  line-height: 1.2379976377;
+  padding-top: 0.4642491141em;
+  padding-bottom: 0.4642491141em;
+  color: #f9fdff; }
 
-h3 {
-  font-size: 1.414em;
-  line-height: 1.547029703;
-  padding-top: 0.9282178218em;
-  padding-bottom: 0.3094059406em; }
+h2 {
+  font-size: 1.6em;
+  padding-top: 1.5em;
+  padding-bottom: 0.75em;
+  color: #0766b1;
+  font-weight: 600; }
 
 h4,
 h5,
@@ -1357,6 +1360,52 @@ button {
       line-height: 1.7142857143em;
       margin-bottom: 0em; } }
 
+.main-header {
+  padding: 0;
+  margin-top: 0;
+  position: relative; }
+  .main-header p {
+    padding: 0; }
+  .main-header h1 {
+    margin-top: 2em;
+    position: absolute;
+    top: 0;
+    padding: 0; }
+
+.main-header-image {
+  height: 220px;
+  overflow: hidden; }
+
+.image-overlay {
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+  zoom: 1;
+  height: 220px;
+  width: 100%;
+  position: absolute;
+  top: 0; }
+
+.bluebox {
+  background-color: #0766b1;
+  color: #f9fdff;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  padding-left: 50px;
+  padding-right: 50px; }
+  .bluebox p {
+    font-size: 1.04em;
+    line-height: 2.5em; }
+
+#main {
+  padding-bottom: 4em; }
+  #main .text p {
+    font-family: serif;
+    font-size: 1.25em; }
+
+.blog-index {
+  margin-top: 3em; }
+
 .doormat-holder {
   padding-bottom: 1.5em; }
   @media (min-width: 60em) {
@@ -1364,7 +1413,7 @@ button {
       padding-bottom: 3em; } }
 
 .doormat-col-4 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -1392,7 +1441,7 @@ button {
       padding-top: 3em; } }
 
 .intro {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -1413,21 +1462,21 @@ button {
     padding-bottom: 1.3125em; }
 
 .main-col-6 {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
   padding-right: 10px; }
   @media (min-width: 60em) {
     .main-col-6 {
-      width: 50%;
+      width: 50.0%;
       float: left;
       position: relative;
       padding-left: 10px;
       padding-right: 10px; } }
 
 .main-content {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
@@ -1452,26 +1501,26 @@ button {
   padding: 3px; }
 
 .example-form-grid label {
-  width: 100%;
+  width: 100.0%;
   float: left;
   position: relative;
   padding-left: 10px;
   padding-right: 10px; }
 @media (min-width: 30em) {
   .example-form-grid label {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
   .example-form-grid .name {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 5px; }
   .example-form-grid .email {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 5px;
@@ -1501,13 +1550,13 @@ button {
     padding-left: 10px;
     padding-right: 5px; }
   .example-form-grid .full-width {
-    width: 100%;
+    width: 100.0%;
     float: left;
     position: relative;
     padding-left: 10px;
     padding-right: 10px; }
   .example-form-grid .oneliner .postfix {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 0px;
@@ -1516,7 +1565,7 @@ button {
     border-radius: 0 5px 5px 0;
     border-left: 0; }
   .example-form-grid .oneliner .prefix {
-    width: 50%;
+    width: 50.0%;
     float: left;
     position: relative;
     padding-left: 10px;

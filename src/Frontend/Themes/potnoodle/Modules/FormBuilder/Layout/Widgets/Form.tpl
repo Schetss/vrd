@@ -1,5 +1,5 @@
 {* Note: we can use general variables names here since this template is parsed within its own scope *}
-
+<div class="row">
 <section>
 	{option:successMessage}<div class="alert-box success">{$successMessage}</div>{/option:successMessage}
 	{option:formBuilderError}<div class="alert-box error"><p>{$formBuilderError}</p></div>{/option:formBuilderError}
@@ -53,3 +53,4 @@
 		</form>
 	{/option:fields}
 </section>
+</div>
