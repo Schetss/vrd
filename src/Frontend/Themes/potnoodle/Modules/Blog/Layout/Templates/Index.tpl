@@ -5,7 +5,7 @@
 <div class="row article-index">
 <section >
 	{iteration:items}
-			<article>
+			<article class="article">
 				<div class="left">
 					<div class="article-image">
 						<a href="{$items.full_url}">

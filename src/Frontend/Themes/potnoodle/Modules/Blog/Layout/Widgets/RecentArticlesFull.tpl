@@ -6,7 +6,7 @@
 {option:widgetBlogRecentArticlesFull}
 	<section>
 		{iteration:widgetBlogRecentArticlesFull}
-			<article>
+			<article class="article">
 				<div class="left">
 					 <div class="article-image">
 						<a href="{$widgetBlogRecentArticlesFull.full_url}">

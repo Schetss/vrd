@@ -5,11 +5,11 @@
     - {$jobs}: contains all jobs
 *}
 
-<div class="jobs article-index row">
+<div class="article-index row">
     {option:jobs}
         <div class="jobs">
             {iteration:jobs}
-                <article>
+                <article class="article">
                     <div class="left">
                         <div class="article-image">
                              {option:jobs.images}
