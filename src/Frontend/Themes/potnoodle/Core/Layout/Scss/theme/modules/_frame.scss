@@ -58,6 +58,8 @@
 	}
 
 .logo {
+	width: 300px;
+	height: 80px;
 	float: left;
 	font-family: $alpha-font-family;
 	font-style: italic;
@@ -85,7 +87,7 @@
 	}
 
 	h1 {
-		margin-top: 2em;
+		margin-top: 2.8em;
 		position: absolute;
 		top: 0;
 		padding: 0;
@@ -93,13 +95,13 @@
 }
 
 .main-header-image {
-	height: 220px;
+	height: 250px;
 	overflow: hidden;
 }
 
 .image-overlay {
 	@include background-opacity(black, 0.4);
-	height: 220px;
+	height: 250px;
 	width: 100%;
 	position: absolute;
 	top: 0;
@@ -132,7 +134,7 @@
 //
 
 #main {
-	padding-bottom: 4em;
+	padding-bottom: 2em;
 
 	.text {
 		p {

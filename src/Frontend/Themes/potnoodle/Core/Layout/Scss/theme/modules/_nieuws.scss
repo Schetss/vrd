@@ -6,15 +6,19 @@ article {
 
 
 	.left {
-		width: 40%;
+		width: 35%;
 		height: 250px;
 		overflow: hidden;
 		float: left;
 
+		img {
+			min-height: 250px;
+		}
+
 	}
 
 	.right {
-		width: 57%;
+		width: 60%;
 		float: right;
 
 		h2 {
@@ -22,6 +26,11 @@ article {
 			margin-top: -0.3em;
 			padding-bottom: 0;
 		}
+
+		p {
+			float: left;
+		}
+
 	}
 
 	.date {
@@ -32,11 +41,12 @@ article {
 
 	.readmore {
 		padding-top: 0; 
+		float: left;
 	}
 
 }
 
 article:last-child {
 	border: 0;
-	padding-bottom: 1em;
+	padding-bottom: 0em;
 }
