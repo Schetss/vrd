@@ -2,15 +2,18 @@
 	variables that are available:
 	- {$items}: contains an array with all posts, each element contains data about the post
 *}
-<div class="row blog-index">
+<div class="row article-index">
 <section >
 	{iteration:items}
 			<article>
 				<div class="left">
-					<a href="{$items.full_url}">
-						{option:items.image}<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$items.image}" alt="{$items.title}" />{/option:items.image}
-					</a>
+					<div class="article-image">
+						<a href="{$items.full_url}">
+							{option:items.image}<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$items.image}" alt="{$items.title}" />{/option:items.image}
+						</a>
+					</div>
 				</div>
+
 
 				<div class="right">
 					<header>

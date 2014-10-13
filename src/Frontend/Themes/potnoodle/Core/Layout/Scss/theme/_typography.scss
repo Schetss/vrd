@@ -31,7 +31,7 @@ h3 {
 
 .line-title {
 	margin-top: 3.5em;
-	margin-bottom: 2em;
+	margin-bottom: 0em;
 }
 
 .line-title-text {
@@ -60,7 +60,7 @@ h1 {
 
 h2 {
 	font-size: 1.6em;
-	@include padding-tb(1,0.5);
+	@include padding-tb(0.5,0.5);
 	color: $alpha-ui-color;
 	font-weight: 600;
 }

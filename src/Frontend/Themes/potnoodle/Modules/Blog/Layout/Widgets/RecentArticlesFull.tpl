@@ -8,9 +8,11 @@
 		{iteration:widgetBlogRecentArticlesFull}
 			<article>
 				<div class="left">
-					<a href="{$widgetBlogRecentArticlesFull.full_url}">
-						{option:widgetBlogRecentArticlesFull.image}<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$widgetBlogRecentArticlesFull.image}" alt="{$widgetBlogRecentArticlesFull.title}" />{/option:widgetBlogRecentArticlesFull.image}
-					</a>
+					 <div class="article-image">
+						<a href="{$widgetBlogRecentArticlesFull.full_url}">
+							{option:widgetBlogRecentArticlesFull.image}<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$widgetBlogRecentArticlesFull.image}" alt="{$widgetBlogRecentArticlesFull.title}" />{/option:widgetBlogRecentArticlesFull.image}
+						</a>
+					</div>
 				</div>
 
 				<div class="right">

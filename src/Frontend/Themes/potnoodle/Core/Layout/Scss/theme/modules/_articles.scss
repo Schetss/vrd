@@ -1,0 +1,111 @@
+//
+// main
+//
+
+
+.article-index {
+	margin-top: 3em;
+}
+
+
+//
+// articles
+//
+
+article {
+	clear: both;
+	padding-bottom: 3em;
+	margin-bottom: 3em;
+	border-bottom: 1px solid $gamma-ui-color;
+
+
+	.left {
+		width: 35%;
+		float: left;
+
+		.article-image {
+			height: 250px;
+			overflow: hidden;
+		}
+
+
+		img {
+			min-height: 250px;
+		}
+
+	}
+
+	.right {
+		width: 60%;
+		float: right;
+
+		h2 {
+			padding-top: 0;
+			margin-top: -0.3em;
+			padding-bottom: 0;
+		}
+
+		p {
+			float: left;
+		}
+
+	}
+
+	.date {
+		font-size: 0.9em;
+		color: $gamma-ui-color;
+		margin-top: -0.5em;
+	}
+
+	.readmore {
+		padding-top: 0; 
+		float: left;
+	}
+
+}
+
+article:last-child {
+	border: 0;
+	padding-bottom: 0em;
+}
+
+
+//
+// Jobs
+//
+.solliciteer {
+	// margin-left: auto;
+	// margin-right: auto;
+	text-align: center;
+	margin-top: 1.5em;
+	width: 100%;
+	font-weight: $beta-font-weight;
+
+	a {
+		background-color: lighten($alpha-ui-color,5);
+		border-radius: $radius;		
+		@include padding-tb(0.5,0.5);
+		@include px-padding-lr(2,2);
+		color: $beta-text-color;
+		width: 100%;
+		display: block;
+	}
+
+	a:hover, a:active {
+		background-color: lighten($alpha-ui-color,3);
+		text-decoration: none;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

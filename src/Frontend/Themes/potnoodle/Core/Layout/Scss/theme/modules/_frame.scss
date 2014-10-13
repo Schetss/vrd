@@ -126,6 +126,15 @@
 		font-size: 1.04em;
 		line-height: 2.5em;
 	}
+
+	a, a:hover, a:active, a:visited {
+		padding: 0.2em;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
+		background-color: $beta-text-color;
+		border-radius: $radius;
+		text-decoration: none;
+	}
 }
 
 
@@ -138,20 +147,22 @@
 
 	.text {
 		p {
-			font-family: $delta-font-family;
+			//font-family: $delta-font-family;
 			font-size: 1.25em;
+			margin-bottom: 1em;
+		}
+
+		.left {
+			width: 48%;
+			float: left;
+		}
+
+		.right {
+			width: 48%;
+			float: left;
 		}
 	}
 }
-
-//
-// main blog
-//
-
-.blog-index {
-	margin-top: 3em;
-}
-
 
 
 //
