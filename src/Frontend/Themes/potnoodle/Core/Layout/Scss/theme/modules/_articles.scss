@@ -51,12 +51,6 @@
 
 	}
 
-	.date {
-		font-size: 0.9em;
-		color: $gamma-ui-color;
-		margin-top: -0.5em;
-	}
-
 	.readmore {
 		padding-top: 0; 
 		float: left;
@@ -64,11 +58,39 @@
 
 }
 
+.date {
+		font-size: 0.9em;
+		color: $gamma-ui-color;
+		margin-top: -0.5em;
+	}
+
+
 article:last-child {
 	border: 0;
 	padding-bottom: 0em;
 }
 
+
+//
+// news
+//
+
+.index-news {
+	margin-top: 2em;
+}
+
+.nieuws-meer {
+	text-align: center;
+
+	a, a:hover, a:active, a:visited {
+		text-decoration: none;
+		@include px-padding-lr(2,2);
+		background-color: lighten($alpha-ui-color,5);
+		color: $beta-text-color;
+		border-radius: $radius;
+		@include padding-tb(0.5,0.5);
+	}
+}
 
 //
 // Jobs

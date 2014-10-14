@@ -20,21 +20,20 @@
 
                     <div class="row">
                     
-                    {option:immo.images}
-                        <div class="images clearfix">
-                            {iteration:immo.images}
-                                <img src="{$immo.images.sizes.small}" alt="{$immo.images.title}" title="{$immo.images.title}" />
-                            {/iteration:immo.images}
+                        {option:immo.images}
+                            <div class="images clearfix">
+                                {iteration:immo.images}
+                                    <img src="{$immo.images.sizes.small}" alt="{$immo.images.title}" title="{$immo.images.title}" />
+                                {/iteration:immo.images}
+                            </div>
+                        {/option:immo.images}
+                        
+                        <div class="immo-intro">    
+                            {$immo.introduction}
                         </div>
-                    {/option:immo.images}
-                    
-                    <div class="immo-intro">    
-                        {$immo.introduction}
-                    </div>
-                    <div class="immo-full">
-                        {$immo.text}
-                    </div>
-                    
+                        <div class="immo-text">
+                            {$immo.text}
+                        </div>
                     </div>
 
                 </article>

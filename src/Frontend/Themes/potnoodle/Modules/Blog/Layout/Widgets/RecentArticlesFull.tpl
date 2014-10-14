@@ -4,7 +4,7 @@
 *}
 
 {option:widgetBlogRecentArticlesFull}
-	<section>
+	<section class="index-news">
 		{iteration:widgetBlogRecentArticlesFull}
 			<article class="article">
 				<div class="left">
@@ -31,5 +31,8 @@
 				<div class="clear"></div>
 			</article>
 		{/iteration:widgetBlogRecentArticlesFull}
+		<div class="nieuws-meer">
+			<a href="{$var|geturlforblock:'Blog'}">Meer berichten</a>
+		</div>
 	</section>
 {/option:widgetBlogRecentArticlesFull}

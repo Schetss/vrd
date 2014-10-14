@@ -386,6 +386,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/src\/Backend\/Cache\/CompiledTemplates\/2f4aa47be7d8cfc20fe85bb3d82f67e6_Email.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Backend\/Cache\/CompiledTemplates\/2f4aa47be7d8cfc20fe85bb3d82f67e6_Email.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/src\/Backend\/Cache\/CompiledTemplates\/2f98da018ea77ce4c6bcb0e8e34c36e5_EditCategory.tpl.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -683,6 +692,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/src\/Backend\/Cache\/CompiledTemplates\/6afd551197025b402496db5991cc8afd_AddThemeTemplate.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Backend\/Cache\/CompiledTemplates\/6afd551197025b402496db5991cc8afd_AddThemeTemplate.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/src\/Backend\/Cache\/CompiledTemplates\/7418d0a184680bca95c27df911955bc4_Themes.tpl.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -751,6 +769,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/Backend\/Cache\/CompiledTemplates\/85477564c757141eb774ace42911f273_Datagrid.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/src\/Backend\/Cache\/CompiledTemplates\/8af8299c88bee9590858c40395880233_Index.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Backend\/Cache\/CompiledTemplates\/8af8299c88bee9590858c40395880233_Index.tpl.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -11041,6 +11068,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/src\/Frontend\/Cache\/CompiledTemplates\/177d792e741377e079e5c49ecf158ec0_DefaultMain.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Cache\/CompiledTemplates\/177d792e741377e079e5c49ecf158ec0_DefaultMain.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/src\/Frontend\/Cache\/CompiledTemplates\/19082c31c53af5db70fee44bc12e0aec_Index.tpl.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -11131,6 +11167,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/src\/Frontend\/Cache\/CompiledTemplates\/5e6153acd734a1be98c803215069cd94_Immo.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Cache\/CompiledTemplates\/5e6153acd734a1be98c803215069cd94_Immo.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/src\/Frontend\/Cache\/CompiledTemplates\/6050cd6447ddcb2937ccc2752ff6c788_Home.tpl.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -11217,6 +11262,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/Frontend\/Cache\/CompiledTemplates\/7eb9632f8d624c4deb4ed6b979f0bb35_Head.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/src\/Frontend\/Cache\/CompiledTemplates\/7fc3d9b12d4c12ca1e827de7c6b5eb9c_Category.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Cache\/CompiledTemplates\/7fc3d9b12d4c12ca1e827de7c6b5eb9c_Category.tpl.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -11356,6 +11410,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/src\/Frontend\/Cache\/CompiledTemplates\/c1f1a529e200f90968b561e7d1568e33_categories.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Cache\/CompiledTemplates\/c1f1a529e200f90968b561e7d1568e33_categories.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/src\/Frontend\/Cache\/CompiledTemplates\/cecef73dd6e8b535df6434df67b0c98e_Form.tpl.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -11442,6 +11505,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/Frontend\/Cache\/CompiledTemplates\/ee305d0a640fbb5f19e594a4c20e94f6_Form.tpl.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/src\/Frontend\/Cache\/CompiledTemplates\/f017ef2faea866dd866253dbb3c16575_Detail.tpl.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Cache\/CompiledTemplates\/f017ef2faea866dd866253dbb3c16575_Detail.tpl.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -12049,50 +12121,6 @@
 		"initialSize": 3710,
 		"inputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/rss_image.png",
 		"outputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/rss_image.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/src\/Frontend\/Core\/Layout\/images\/selector_1.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3.91094e+06,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_1.jpg",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_1.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/src\/Frontend\/Core\/Layout\/images\/selector_2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 539632,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_2.jpg",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/src\/Frontend\/Core\/Layout\/images\/selector_3.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 471601,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_3.jpg",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_3.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/src\/Frontend\/Core\/Layout\/images\/selector_4.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 499823,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_4.jpg",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_4.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -17165,22 +17193,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/theme\/modules\/_articles 2.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/theme\/modules\/_articles 2.scss",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/theme\/css\/_articles 2.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/theme\/modules\/_articles.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -17238,6 +17250,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/theme\/modules\/_home.scss",
 		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/theme\/css\/_home.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/theme\/modules\/_immo.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/theme\/modules\/_immo.scss",
+		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/theme\/css\/_immo.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

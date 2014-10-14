@@ -18,18 +18,64 @@
 
 
 	.immo-intro {
-
+		margin-top: 1em;
 	}
 
-	.immo-full {
-		
+	.immo-btn {
+		a {
+			background-color: lighten($alpha-ui-color,5);
+			border-radius: $radius;		
+			@include padding-tb(0.5,0.5);
+			@include px-padding-lr(2,2);
+			color: $beta-text-color;
+			width: 170px;
+			display: block;
+		}
+
+		a:hover, a:active {
+			background-color: lighten($alpha-ui-color,3);
+			text-decoration: none;
+		}
 	}
 
 }
 
 
+//
+// navigation
+//
+
+.immo-nav {
+	float: left;
+	width: 100%;
+
+	ul {
+		@extend %clearfix;
+		font-family: $alpha-font-family;
+		@include list-nav;
+		// @include text-dimensions($alpha-font-size,1,1);
+	}
+	
+	a {
+		@include px-padding-lr(2,2);
+		@include padding-tb(0.3,0.3);
+		color: $beta-text-color;
+		text-decoration: none;
+		//font-weight: $beta-font-weight;
+		float: left;
+	}
+
+	.selected a {
+		background-color: lighten($alpha-ui-color,10);
+	}
+}
 
 
+
+
+.bluebox2 {
+	background-color: $alpha-ui-color;
+}
 
 
 

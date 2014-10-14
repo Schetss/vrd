@@ -84,7 +84,7 @@
 	float: right;
 
 	ul {
-		margin-top: 20px;
+		margin-top: 35px;
 		float: right;
 		@include horizontal-nav();
 		@include text-dimensions(14,1,0);
@@ -125,8 +125,11 @@
 		margin-right: 0.13%;
 		overflow: hidden;
 		height: 350px;
+
 		.selector-img {
-			max-width: 710px;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		p {
@@ -150,7 +153,9 @@
 		height: 350px;
 
 		.selector-img {
-			max-width: 710px;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		p {
@@ -168,3 +173,47 @@
 	}
 
 }
+
+
+// Navigation index
+
+#selector2 {
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	ul {
+		padding: 0;
+		float: left;
+		width: 100%;
+	}
+
+	li {
+		@include background-opacity($alpha-ui-color, 0.85);
+		text-align: center;
+		float: left;
+		list-style-type: none;
+		margin-right: 0.17em;
+		width: 24.8%;
+	}
+
+	li:nth-child(4) {
+   		margin-right: 0em;
+   		float: right;
+	}
+
+	a, a:hover, a:active, a:visited {
+		color: $beta-text-color;
+		text-decoration: none;
+		width: 100%;
+		display: block;
+	}
+
+	.selected {
+		@include background-opacity(lighten($alpha-ui-color,8), 0.85);
+	}
+}
+
+
+
+

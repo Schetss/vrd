@@ -7,7 +7,7 @@
 
 			<div class="inner-header">
 				<div class="inner-inner-header row">
-					<a href="/"><img class="logo retina" alt="{$siteTitle}" src="/src/Frontend/Core/Layout/images/logo.png" /></a>
+					<a href="{$SITE_URL}/nl"><img class="logo retina" alt="{$siteTitle}" src="/src/Frontend/Core/Layout/images/logo.png" /></a>
 	                <p class="slogan">Uw partner in opslag, distributie en verhuur!</p>
 
 					{* Languages *}

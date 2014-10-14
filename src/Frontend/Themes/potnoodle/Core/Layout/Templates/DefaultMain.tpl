@@ -27,11 +27,28 @@
 			</div>	
 			<div class="image-overlay"></div>
 
+			<nav id="selector2">
+				<ul>
+					<li>
+						<a href="/nl/het-bedrijf/distributie">Distributie</a>
+					</li>
+					<li>
+						<a href="/nl/het-bedrijf/transport">Transport</a>
+					</li>
+					<li>
+						<a href="/nl/het-bedrijf/opslag-fijnpikking">Opslag &amp; fijnpicking</a>
+					</li>
+					<li>
+						<a href="/nl/het-bedrijf/immo">Immo</a>
+					</li>
+				</ul>
+			</nav>
+
 			<div class="row main-header-title">
 				{* Page title *}
 				{option:!hideContentTitle}
 					<header>
-						<h1>{$page.title}</h1>
+						<!-- <h1>{$page.title}</h1> -->
 					</header>
 				{/option:!hideContentTitle}
 			</div>
