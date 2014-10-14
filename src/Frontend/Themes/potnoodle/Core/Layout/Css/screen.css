@@ -1380,8 +1380,8 @@ button {
 
 .image-overlay {
   background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.4);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#66000000,endColorstr=#66000000);
+  background-color: rgba(0, 0, 0, 0.35);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#59000000,endColorstr=#59000000);
   zoom: 1;
   height: 250px;
   width: 100%;
@@ -1823,6 +1823,8 @@ article:last-child {
   margin-top: 2em; }
 
 .nieuws-meer {
+  margin-top: -1em;
+  margin-bottom: 1em;
   text-align: center; }
   .nieuws-meer a, .nieuws-meer a:hover, .nieuws-meer a:active, .nieuws-meer a:visited {
     text-decoration: none;

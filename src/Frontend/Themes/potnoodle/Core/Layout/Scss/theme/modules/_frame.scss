@@ -100,7 +100,7 @@
 }
 
 .image-overlay {
-	@include background-opacity(black, 0.4);
+	@include background-opacity(#000, 0.35);
 	height: 250px;
 	width: 100%;
 	position: absolute;

@@ -23,7 +23,7 @@
                         {option:immo.images}
                             <div class="images clearfix">
                                 {iteration:immo.images}
-                                    <img src="{$immo.images.sizes.small}" alt="{$immo.images.title}" title="{$immo.images.title}" />
+                                    <img src="{$immo.images.sizes.large}" alt="{$immo.images.title}" title="{$immo.images.title}" />
                                 {/iteration:immo.images}
                             </div>
                         {/option:immo.images}
