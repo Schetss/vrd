@@ -12,44 +12,70 @@
 
 	<main id="main" class="holder main-holder" role="main">
 		<div class="main-header">
-			<div class="main-header-image">
-				{* Image position *}
-				{option:positionImage}
-					{iteration:positionImage}
-					{option:!positionImage.blockIsHTML}
-						{$positionImage.blockContent}
-					{/option:!positionImage.blockIsHTML}
-					{option:positionImage.blockIsHTML}
-						{$positionImage.blockContent}
-					{/option:positionImage.blockIsHTML}
-					{/iteration:positionImage}
-				{/option:positionImage}
-			</div>	
-			<div class="image-overlay"></div>
+			<div {option:!item.image}class="main-header-image"{/option:!item.image}{option:item.image}class="main-header-image2"{/option:item.image}>
+				{option:item.image}
+					<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$item.image}" alt="{$item.title}" itemprop="image" />
+				{/option:item.image}
+				{option:!item.image}
+					{* Image position *}
+					{option:positionImage}
+						{iteration:positionImage}
+						{option:!positionImage.blockIsHTML}
+							{$positionImage.blockContent}
+						{/option:!positionImage.blockIsHTML}
+						{option:positionImage.blockIsHTML}
+							{$positionImage.blockContent}
+						{/option:positionImage.blockIsHTML}
+						{/iteration:positionImage}
+					{/option:positionImage}
+				{/option:!item.image}
 
+			</div>	
+			{option:!item.image}
+				<div class="image-overlay"></div>
+			{/option:!item.image}
+			{option:item.image}
+				<div class="image-overlay-detail"></div>
+			{/option:item.image}
 			<div class="row main-header-title">
 				{* Page title *}
 				{option:!hideContentTitle}
 					<header>
-						<h1>{$page.title}</h1>
+						<h1 class="main-title">{$page.title}</h1>
 					</header>
 				{/option:!hideContentTitle}
+				
+				{option:item.title}
+					<header>
+						<h1 class="item-title">{$item.title}</h1>
+					</header>
+				{/option:item.title}
 			</div>
 		</div>
 
-		<div class="bluebox row">
-			{* Bluebox position *}
-			{option:positionBluebox}
-				{iteration:positionBluebox}
-				{option:!positionBluebox.blockIsHTML}
-					{$positionBluebox.blockContent}
-				{/option:!positionBluebox.blockIsHTML}
-				{option:positionBluebox.blockIsHTML}
-					{$positionBluebox.blockContent}
-				{/option:positionBluebox.blockIsHTML}
-				{/iteration:positionBluebox}
-			{/option:positionBluebox}
-		</div>
+		
+			<div {option:!item.title}class="bluebox row"{/option:!item.title}class="bluebox2 row"{option:item.title}{/option:item.title}>
+				{option:item.title}
+				<p class="date-detail">
+					<time itemprop="datePublished" datetime="{$item.publish_on|date:'Y-m-d\TH:i:s'}">{$item.publish_on|date:{$dateFormatLong}:{$LANGUAGE}}</time>
+				</p>
+				{/option:item.title}
+				{option:!item.title}			
+					{* Bluebox position *}
+					{option:positionBluebox}
+						{iteration:positionBluebox}
+						{option:!positionBluebox.blockIsHTML}
+							{$positionBluebox.blockContent}
+						{/option:!positionBluebox.blockIsHTML}
+						{option:positionBluebox.blockIsHTML}
+							{$positionBluebox.blockContent}
+						{/option:positionBluebox.blockIsHTML}
+						{/iteration:positionBluebox}
+					{/option:positionBluebox}
+				{/option:!item.title}
+			</div>
+
+
 			<div class="main main-text">
 				{* Main position *}
 				{option:positionMain}

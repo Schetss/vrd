@@ -59,6 +59,23 @@
 	zoom: 1;
 }
 
+
+//
+// gradient
+//
+
+@mixin gradient-linear-transparant($start, $color) {
+	background: -webkit-linear-gradient(rgba(0,0,0,0.01) $start, $color 130%);
+	background: -o-linear-gradient(rgba(0,0,0,0.01) $start, $color 130%);
+	background: -moz-linear-gradient(rgba(0,0,0,0.01) $start, $color 130%);
+	background: linear-gradient(rgba(0,0,0,0.01) $start, $color 130%);
+	background: -ms-gradient(rgba(0,0,0,0.01) $start, $color 130%);
+}
+
+
+
+
+
 // Baseline mixins
 
 // Vertical padding based on the base line-height

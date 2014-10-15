@@ -72,7 +72,6 @@
 	}
 }
 
-
 // 
 // Main header 
 //
@@ -86,12 +85,20 @@
 		padding: 0;
 	}
 
-	h1 {
+	.main-title {
 		margin-top: 2.8em;
 		position: absolute;
 		top: 0;
 		padding: 0;
 	}
+
+	.item-title {
+		position: absolute;
+		bottom: 0;
+		padding: 0;
+		margin-bottom: 1.5em;
+	}
+
 }
 
 .main-header-image {
@@ -99,9 +106,26 @@
 	overflow: hidden;
 }
 
+.main-header-image2 {
+	height: 350px;
+	overflow: hidden;
+
+	img {
+		margin-top: -200px;
+	}
+}
+
 .image-overlay {
-	@include background-opacity(#000, 0.35);
+	@include gradient-linear-transparant(5%,black);
 	height: 250px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.image-overlay-detail {
+	@include gradient-linear-transparant(5%,black);
+	height: 350px;
 	width: 100%;
 	position: absolute;
 	top: 0;
@@ -115,10 +139,9 @@
 // bluebox
 //
 
-.bluebox {
+.bluebox, .bluebox2 {
 	background-color: $alpha-ui-color;
 	color: $beta-text-color;
-	@include padding-tb (0.8,0.8);
 	@include px-padding-lr(5,5);
 
 
@@ -137,6 +160,13 @@
 	}
 }
 
+.bluebox {
+	@include padding-tb (0.8,0.8);
+}
+
+.bluebox2 {
+	@include padding-tb (0,0);
+}
 
 //
 // Main 
@@ -145,7 +175,12 @@
 #main {
 	padding-bottom: 2em;
 
+	.content {
+		@include px-padding-lr(5,5);
+	}
+
 	.text {
+
 		p {
 			//font-family: $delta-font-family;
 			font-size: 1.25em;
@@ -154,12 +189,13 @@
 
 		.left {
 			width: 48%;
+			border-right: 1px solid $gamma-ui-color;
 			float: left;
 		}
 
 		.right {
-			width: 48%;
-			float: left;
+			width: 47%;
+			float: right;
 		}
 	}
 }

@@ -5,21 +5,12 @@ variables that are available:
 - {$commentsCount}: contains a variable with the number of comments for this blog post.
 - {$navigation}: contains an array with data for previous and next post
 *}
-<div class="row">
+<div class="row content">
 	<article itemscope itemtype="http://schema.org/Blog">
 		<meta itemprop="interactionCount" content="UserComments:{$commentsCount}">
 		<meta itemprop="author" content="{$item.user_id|usersetting:'nickname'}">
-		<header>
-			<h2 itemprop="articletitle">{$item.title}</h2>
-			<p class="date">
-				<time itemprop="datePublished" datetime="{$item.publish_on|date:'Y-m-d\TH:i:s'}">{$item.publish_on|date:{$dateFormatLong}:{$LANGUAGE}}</time>
-			</p>
-		</header>
-
+		
 		<div itemprop="articlecontent">
-			{option:item.image}
-				<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$item.image}" alt="{$item.title}" itemprop="image" />
-			{/option:item.image}
 			{$item.text}
 		</div>
 		<footer>

@@ -19,7 +19,7 @@
                             {/option:jobs.images}
                         </div>
                         <div class="solliciteer">
-                            <a href="mailto:raoul@vrd.be?Subject=Sollicitatie:{$jobs.title|ucfirst}" target="_top">solliciteer nu</a>
+                            <a href="mailto:raoul@vrd.be?Subject=Sollicitatie:%20{$jobs.title|ucfirst}" target="_top">solliciteer nu</a>
                         </div>
                     </div>
                 

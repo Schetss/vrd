@@ -1023,7 +1023,8 @@ h1 {
   line-height: 1.2379976377;
   padding-top: 0.4642491141em;
   padding-bottom: 0.4642491141em;
-  color: #f9fdff; }
+  color: #f9fdff;
+  font-weight: bold; }
 
 h2 {
   font-size: 1.6em;
@@ -1368,37 +1369,58 @@ button {
   position: relative; }
   .main-header p {
     padding: 0; }
-  .main-header h1 {
+  .main-header .main-title {
     margin-top: 2.8em;
     position: absolute;
     top: 0;
     padding: 0; }
+  .main-header .item-title {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin-bottom: 1.5em; }
 
 .main-header-image {
   height: 250px;
   overflow: hidden; }
 
+.main-header-image2 {
+  height: 350px;
+  overflow: hidden; }
+  .main-header-image2 img {
+    margin-top: -200px; }
+
 .image-overlay {
-  background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.35);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#59000000,endColorstr=#59000000);
-  zoom: 1;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
+  background: linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
+  background: -ms-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
   height: 250px;
   width: 100%;
   position: absolute;
   top: 0; }
 
-.bluebox {
+.image-overlay-detail {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
+  background: linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
+  background: -ms-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  top: 0; }
+
+.bluebox, .bluebox2 {
   background-color: #0766b1;
   color: #f9fdff;
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
   padding-left: 50px;
   padding-right: 50px; }
-  .bluebox p {
+  .bluebox p, .bluebox2 p {
     font-size: 1.04em;
     line-height: 2.5em; }
-  .bluebox a, .bluebox a:hover, .bluebox a:active, .bluebox a:visited {
+  .bluebox a, .bluebox a:hover, .bluebox a:active, .bluebox a:visited, .bluebox2 a, .bluebox2 a:hover, .bluebox2 a:active, .bluebox2 a:visited {
     padding: 0.2em;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -1406,17 +1428,29 @@ button {
     border-radius: 5px;
     text-decoration: none; }
 
+.bluebox {
+  padding-top: 1.2em;
+  padding-bottom: 1.2em; }
+
+.bluebox2 {
+  padding-top: 0em;
+  padding-bottom: 0em; }
+
 #main {
   padding-bottom: 2em; }
+  #main .content {
+    padding-left: 50px;
+    padding-right: 50px; }
   #main .text p {
     font-size: 1.25em;
     margin-bottom: 1em; }
   #main .text .left {
     width: 48%;
+    border-right: 1px solid #bdbcbf;
     float: left; }
   #main .text .right {
-    width: 48%;
-    float: left; }
+    width: 47%;
+    float: right; }
 
 .doormat-holder {
   padding-bottom: 1.5em; }
@@ -1775,11 +1809,6 @@ button {
     text-decoration: none;
     width: 100%;
     display: block; }
-  #selector2 .selected {
-    background-color: transparent;
-    background-color: rgba(9, 125, 216, 0.85);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D9097DD8,endColorstr=#D9097DD8);
-    zoom: 1; }
 
 .article-index {
   margin-top: 3em; }
@@ -1814,6 +1843,10 @@ button {
   font-size: 0.9em;
   color: #bdbcbf;
   margin-top: -0.5em; }
+
+.date-detail {
+  font-size: 0.9em;
+  color: #bdbcbf; }
 
 article:last-child {
   border: 0;
@@ -1856,27 +1889,34 @@ article:last-child {
     text-decoration: none; }
 
 .immo .images {
+  position: relative;
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
-  margin-top: 1em; }
+  margin-top: 1.5em; }
   .immo .images img {
     width: 100%; }
 .immo .immo-intro {
   margin-top: 1em; }
-.immo .immo-btn a {
-  background-color: #0874ca;
-  border-radius: 5px;
-  padding-top: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 20px;
-  padding-right: 20px;
-  color: #f9fdff;
-  width: 170px;
-  display: block; }
-.immo .immo-btn a:hover, .immo .immo-btn a:active {
-  background-color: #086ec0;
-  text-decoration: none; }
+.immo .immo-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+  .immo .immo-btn a {
+    background-color: transparent;
+    background-color: rgba(7, 102, 177, 0.85);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D90766B1,endColorstr=#D90766B1);
+    zoom: 1;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #f9fdff;
+    width: 170px;
+    display: block; }
+  .immo .immo-btn a:hover, .immo .immo-btn a:active, .immo .immo-btn a:visited {
+    background-color: #086ec0;
+    text-decoration: none; }
 
 .immo-nav {
   float: left;

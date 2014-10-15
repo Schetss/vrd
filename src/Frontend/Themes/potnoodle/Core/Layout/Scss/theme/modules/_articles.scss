@@ -64,6 +64,12 @@
 		margin-top: -0.5em;
 	}
 
+.date-detail {
+		font-size: 0.9em;
+		color: $gamma-ui-color;
+}
+
+
 
 article:last-child {
 	border: 0;
@@ -95,6 +101,8 @@ article:last-child {
 		@include padding-tb(0.5,0.5);
 	}
 }
+
+
 
 //
 // Jobs

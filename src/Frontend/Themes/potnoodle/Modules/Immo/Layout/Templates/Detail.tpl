@@ -1,4 +1,4 @@
-<div class="immo immo-detail">
+<div class="immo immo-detail row">
 	<article>
 		<div class="hd">
 			<h1 itemprop="name">{$item.title}</h1>
