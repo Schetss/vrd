@@ -1,39 +1,35 @@
-<div class="immo immo-detail row">
+<div class="immo immo-detail row content">
 	<article>
-		<div class="hd">
-			<h1 itemprop="name">{$item.title}</h1>
-			<p class="date">
-				<time datetime="{$item.date|date:'c':{$LANGUAGE}}">
-				<small>{$item.created_on|timeago}</small>
-				{$item.date|date:'d':{$LANGUAGE}} {$item.date|date:'F':{$LANGUAGE}} {$item.date|date:'Y':{$LANGUAGE}}
-				</time>
-			</p>
-			<p class="client">
-				{$lblClient|ucfirst}
-				<a href="{$item.client_full_url}" title="{$item.client_title}"><b>{$item.client_title}</b></a>
-			</p>
-			<p class="category">
-				{$lblCategory|ucfirst}
-				<a href="{$item.category_full_url}" title="{$item.category_title}"><b>{$item.category_title}</b></a>
-			</p>
-		</div>
 		<div class="bd">
 			<p>{$item.text}</p>
+
+
 			{option:images}
-			<div class="immoImages">
-				<h3>{$lblImages|ucfirst}</h3>
+			<div class="immo-images">
+				<!-- <h3>{$lblImages|ucfirst}</h3> -->
+				<div class="immo-image-large">
+					<img id="immo-preview-image" src="" />
+				</div>
 				{iteration:images}
-					<a class="colorbox" rel="group1" href="{$images.sizes.large}" title="{$images.title}">
+				<div class="box" id="{$images.id}">
+					<!-- <a class="colorbox" rel="group1" href="{$images.sizes.large}" title="{$images.title}"> -->
 						<img src="{$images.sizes.small}" alt="{$images.title}" title="{$images.title}" />
-					</a>
+					<!-- </a> -->
+				</div>
 				{/iteration:images}
+			</div>
+			
+
+			<div class="immo-videos">
 				{iteration:videos}
 					<a class="fancybox fancybox.iframe" rel="gallery" href="{$videos.url}">
 						<img src="{$videos.image}" alt="{$videos.title}" title="{$videos.title}">
 					</a>
 				{/iteration:videos}
 			</div>
+			<div class="clear"></div>
 			{/option:images}
+
 			<div class="divider"></div>
 			{option:related}
                 <div class="relatedImmo">
@@ -49,8 +45,9 @@
                 </div>
 			{/option:related}
 		</div>
+		<footer>
+			<a href="{$var|geturlforblock:'Immo'}" title="{$msgToImmoOverview|ucfirst}">{$msgToImmoOverview|ucfirst}</a>
+		</footer>
 	</article>
-	<div>
-		<a href="{$var|geturlforblock:'Immo'}" title="{$msgToImmoOverview|ucfirst}">{$msgToImmoOverview|ucfirst}</a>
-	</div>
+	
 </div>

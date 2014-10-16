@@ -7,6 +7,7 @@ var jsTheme =
 		jsTheme.forms.init();
 		jsTheme.catNav.init();
 		jsTheme.selectNav.init();
+		jsTheme.deleteImages.init();
 
 	//	console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
 	}
@@ -94,9 +95,6 @@ jsTheme.selectNav =
 	}
 };
 
-
-
-
 $(jsTheme.init);
 
 
@@ -126,8 +124,15 @@ $(window).on("load", function() {
 
     $('.main-text .text').addClass('row');
     
+ 	//$("#main-header-image2 img").remove();
+ 	$("#main-header-image3 img:not(:first)").remove();
 
 
+ 	//
+ 	// immo image player
+ 	//
+
+ 	
 
 
 });

@@ -13,17 +13,12 @@ variables that are available:
 		<div itemprop="articlecontent">
 			{$item.text}
 		</div>
-		<footer>
-			{option:navigation}
-				{option:!navigation.next}
-					{option:navigation.previous}
-						<a href="{$navigation.previous.url}" rel="prev">{$lblPreviousArticle|ucfirst}: {$navigation.previous.title}</a>
-					{/option:navigation.previous}
-				{/option:!navigation.next}
-				{option:navigation.next}
+		{option:navigation}
+			{option:navigation.next}
+				<footer>	
 					<a href="{$navigation.next.url}" rel="next">{$lblNextArticle|ucfirst}: {$navigation.next.title}</a>
-				{/option:navigation.next}
-			{/option:navigation}
-		</footer>
+				</footer>
+			{/option:navigation.next}
+		{/option:navigation}
 	</article>
 </div>

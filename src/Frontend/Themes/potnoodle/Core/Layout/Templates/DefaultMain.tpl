@@ -36,7 +36,7 @@
 						<a href="/nl/het-bedrijf/transport">Transport</a>
 					</li>
 					<li>
-						<a href="/nl/het-bedrijf/opslag-fijnpikking">Opslag &amp; fijnpicking</a>
+						<a href="/nl/het-bedrijf/opslag-fijnpicking">Opslag &amp; fijnpicking</a>
 					</li>
 					<li>
 						<a href="/nl/het-bedrijf/immo">Immo</a>
@@ -48,7 +48,7 @@
 				{* Page title *}
 				{option:!hideContentTitle}
 					<header>
-						<h1>{$page.title}</h1>
+						<h1 class="main-title">{$page.title}</h1>
 					</header>
 				{/option:!hideContentTitle}
 			</div>

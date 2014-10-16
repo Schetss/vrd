@@ -35,7 +35,7 @@
 
 
 			<div class="selector-picture">
-				<a href="/nl/het-bedrijf/opslag-fijnpikking">
+				<a href="/nl/het-bedrijf/opslag-fijnpicking">
 					<p class="selector-name">
 						Opslag &amp; fijnpicking
 					</p>

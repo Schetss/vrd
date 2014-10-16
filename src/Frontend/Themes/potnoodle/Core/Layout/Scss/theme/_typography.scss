@@ -11,7 +11,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	font-family: $beta-font-family;
+	font-family: $alpha-font-family;
 	font-weight: $alpha-font-weight;
 	text-rendering: optimizelegibility;
 }
@@ -56,7 +56,7 @@ hr {
 h1 {
 	@include baseline-dimensions(3,3,3);
 	color: $beta-text-color;
-	font-weight: bold;
+	//font-weight: bold;
 }
 
 h2 {
@@ -128,7 +128,7 @@ th {
 }
 
 img {
-	max-width: 100%;
+	max-width: none;
 }
 
 //

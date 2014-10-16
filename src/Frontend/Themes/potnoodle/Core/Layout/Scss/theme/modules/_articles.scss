@@ -103,6 +103,43 @@ article:last-child {
 }
 
 
+//
+// Detail news
+//
+
+.content {
+		margin-top: 2em;
+		margin-bottom: 2em;
+
+	 p {
+	 	font-family: $beta-font-family;
+	 	font-size: 1.3em;
+	 	line-height: 1.8em;
+	 }
+
+	 img {
+	 	//width: 100%;
+	 	//max-height: 600px;
+	 	margin-left: auto;
+	 	margin-right: auto;
+	 	display: block;
+	 	@include margin-tb(1,1);
+	 	width: 70%;
+	 	max-width: none;
+	 }
+
+	 footer {
+	 	border-top: 1px solid $gamma-ui-color;
+	 	border-bottom: 1px solid $gamma-ui-color;
+	 	margin-top: 2em;
+	 	@include padding-tb(1,1);
+	 	font-weight: bold;
+	 }
+}
+
+
+
+
 
 //
 // Jobs
@@ -129,8 +166,6 @@ article:last-child {
 		background-color: lighten($alpha-ui-color,3);
 		text-decoration: none;
 	}
-
-
 }
 
 
