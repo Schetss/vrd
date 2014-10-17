@@ -25,9 +25,14 @@
 			position: relative;
 
 			.slogan {
-				position: absolute;
-				margin-left: 200px;
-				margin-top: 40px;
+				display: none;
+
+				@include mq($bp3) {
+					display: block;
+					position: absolute;
+					margin-left: 200px;
+					margin-top: 40px;
+				}
 			}
 
 		}
@@ -45,6 +50,7 @@
 	@include mq($bp3) {
 		@include padding-top(0);
 	}
+
 }
 
 	.header-holder .inner {
@@ -58,17 +64,22 @@
 	}
 
 .logo {
-	width: 369px;
-	height: 98px;
+	@include px-padding-lr(1,0);
+	width: 250px;
+	height: 66px;
 	float: left;
 	font-family: $alpha-font-family;
 	font-style: italic;
 	font-weight: $alpha-font-weight;
-	@include text-dimensions($alpha-font-size,1,1);
-
+	
 	@include mq($bp3) {
+		@include px-padding-lr(0,0);
+		width: 369px;
+		height: 98px;
 		float: left;
 		@include text-dimensions(14,1,0);
+	//	@include text-dimensions($alpha-font-size,1,1);
+
 	}
 }
 

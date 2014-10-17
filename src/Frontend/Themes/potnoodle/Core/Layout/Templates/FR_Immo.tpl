@@ -8,15 +8,18 @@
 	<![endif]-->
 
 	{* Header *}
-	{include:Core/Layout/Templates/Header.tpl}
+	{include:Core/Layout/Templates/NL_Header.tpl}
 
 	<main id="main" class="holder main-holder" role="main">
 		<div class="main-header">
-			<div {option:!item.image}class="main-header-image"{/option:!item.image}{option:item.image}class="main-header-image2"{/option:item.image}>
-				{option:item.image}
-					<img src="{$FRONTEND_FILES_URL}/blog/images/source/{$item.image}" alt="{$item.title}" itemprop="image" />
-				{/option:item.image}
-				{option:!item.image}
+			<div {option:!item.images}class="main-header-image"{/option:!item.images}{option:item.images}id="main-header-image3"{/option:item.images}>
+				{option:item.images}
+					{iteration:images}
+					<img class="immo-head-img" src="{$images.sizes.large}" />
+					{/iteration:images}
+				{/option:item.images}
+
+				{option:!item.images}
 					{* Image position *}
 					{option:positionImage}
 						{iteration:positionImage}
@@ -28,23 +31,41 @@
 						{/option:positionImage.blockIsHTML}
 						{/iteration:positionImage}
 					{/option:positionImage}
-				{/option:!item.image}
-
+				{/option:!item.images}
+			}
 			</div>	
-			{option:!item.image}
+			{option:!item.images}
 				<div class="image-overlay"></div>
-			{/option:!item.image}
-			{option:item.image}
+			{/option:!item.images}
+			{option:item.images}
 				<div class="image-overlay-detail"></div>
-			{/option:item.image}
+			{/option:item.images}
+			
+			<nav id="selector2">
+				<ul>
+					<li>
+						<a href="/nl/het-bedrijf/distributie">Distributie</a>
+					</li>
+					<li>
+						<a href="/nl/het-bedrijf/transport">Transport</a>
+					</li>
+					<li>
+						<a href="/nl/het-bedrijf/opslag-fijnpicking">Opslag &amp; fijnpicking</a>
+					</li>
+					<li>
+						<a href="/nl/het-bedrijf/immo">Immo</a>
+					</li>
+				</ul>
+			</nav>
+
 			<div class="row main-header-title">
 				{* Page title *}
-				{option:!hideContentTitle}
+				{option:!item.title}
 					<header>
 						<h1 class="main-title">{$page.title}</h1>
 					</header>
-				{/option:!hideContentTitle}
-				
+				{/option:!item.title}
+
 				{option:item.title}
 					<header>
 						<h1 class="item-title">{$item.title}</h1>
@@ -53,29 +74,26 @@
 			</div>
 		</div>
 
-		
-			<div {option:!item.title}class="bluebox row"{/option:!item.title}class="bluebox2 row"{option:item.title}{/option:item.title}>
-				{option:item.title}
-				<p class="date-detail">
-					<time itemprop="datePublished" datetime="{$item.publish_on|date:'Y-m-d\TH:i:s'}">{$item.publish_on|date:{$dateFormatLong}:{$LANGUAGE}}</time>
-				</p>
-				{/option:item.title}
-				{option:!item.title}			
-					{* Bluebox position *}
-					{option:positionBluebox}
-						{iteration:positionBluebox}
-						{option:!positionBluebox.blockIsHTML}
-							{$positionBluebox.blockContent}
-						{/option:!positionBluebox.blockIsHTML}
-						{option:positionBluebox.blockIsHTML}
-							{$positionBluebox.blockContent}
-						{/option:positionBluebox.blockIsHTML}
-						{/iteration:positionBluebox}
-					{/option:positionBluebox}
-				{/option:!item.title}
-			</div>
+		<div {option:!item.title}class="immo-bluebox row"{/option:!item.title}class="bluebox row"{option:item.title}{/option:item.title}>
+			
+			{option:item.title}
+				{$item.introduction}
+			{/option:item.title}
 
-
+			{option:!item.title}
+				{* Bluebox position *}
+				{option:positionBluebox}
+					{iteration:positionBluebox}
+					{option:!positionBluebox.blockIsHTML}
+						{$positionBluebox.blockContent}
+					{/option:!positionBluebox.blockIsHTML}
+					{option:positionBluebox.blockIsHTML}
+						{$positionBluebox.blockContent}
+					{/option:positionBluebox.blockIsHTML}
+					{/iteration:positionBluebox}
+				{/option:positionBluebox}
+			{/option:!item.title}
+		</div>
 			<div class="main main-text">
 				{* Main position *}
 				{option:positionMain}

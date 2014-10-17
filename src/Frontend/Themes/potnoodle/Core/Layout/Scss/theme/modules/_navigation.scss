@@ -11,6 +11,7 @@
 		@include text-dimensions($alpha-font-size,1,1);
 	}
 
+
 	a {
 		color: $alpha-ui-color;
 		text-decoration: none;
@@ -35,6 +36,7 @@
 		font-size: 1.05em;
 
 		ul {
+			width: 100%;
 			float: left;
 			@include horizontal-nav();
 			@include text-dimensions(14,1,0);
@@ -44,6 +46,11 @@
 			// @include px-margin-lr(1,0);
 			@include padding-tb(0.4, 0.4);
 			margin-right: 2em;
+		}
+
+		ul li:last-child {
+    		float: right;
+    		margin-right: 0em !important;
 		}
 
 		.main-nav-extra {
@@ -57,14 +64,26 @@
 
 }
 
+.header-nav {
+	@include padding-tb(0.5,0.5);
+
+	@include mq($bp3) {
+		@include padding-tb(0,0);
+	}
+}
+
 .main-nav-trigger {
 	//dihttp://vrdfork:8888/nlsplay: block;
 	float: right;
-	width: 2.1em;
-	height: 2.1em;
-	text-indent: -9999px;
-	@include text-dimensions($alpha-font-size,1,1);
-	@include svg-bg("../img/icon-menu", ".png", $alpha-text-color, 50%, no-repeat);
+	//width: 2.1em;
+	//height: 2.1em;
+	//text-indent: -9999px;
+	//@include text-dimensions($alpha-font-size,1,1);
+	@include svg-bg("../img/icon-menu", ".png", 100%, no-repeat);
+	font-size: 1.2em;
+	font-weight: bold;
+	@include px-margin-lr(0,1);
+	@include px-padding-lr(0,4);
 
 	@include mq($bp3) {
 		display: none;
@@ -73,7 +92,7 @@
 
 .svg .trigger-active,
 .trigger-active {
-	background-color: $alpha-link-color;
+	//background-color: $alpha-link-color;
 }
 
 
@@ -81,10 +100,22 @@
 // language Navigation
 
 .lan-nav {
-	float: right;
+	position: absolute;
+	right: 0;
+	@include px-padding-lr(0,1);
+
+	@include mq($bp3) {
+		@include px-padding-lr(0,0);
+		position: relative;
+	}
 
 	ul {
-		margin-top: 35px;
+		margin-top: 15px;
+
+		@include mq($bp3) {
+			margin-top: 35px;
+		}
+		
 		float: right;
 		@include horizontal-nav();
 		@include text-dimensions(14,1,0);
@@ -97,7 +128,7 @@
 		font-size: 0.8em;
 		
 		background-color: $alpha-ui-color;
-		margin-left: 0.8em;
+		margin-left: 0.9em;
 		@include padding-tb(0.04,0.04);
 		padding-left: 0.35em;
 		padding-right: 0.35em;

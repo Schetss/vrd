@@ -7,9 +7,4 @@
 			</li>
 		{/iteration:navigation}
     </ul>
-    <ul class="main-nav-extra">
-        <li>
-            <a href="http://klanten.vrd.be" target="_blank">Klanten login</a>
-        </li>
-    </ul>
 {/option:navigation}

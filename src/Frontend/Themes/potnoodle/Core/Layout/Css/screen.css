@@ -1325,9 +1325,13 @@ button {
     .header .inner-header .inner-inner-header {
       position: relative; }
       .header .inner-header .inner-inner-header .slogan {
-        position: absolute;
-        margin-left: 200px;
-        margin-top: 40px; }
+        display: none; }
+        @media (min-width: 42.5em) {
+          .header .inner-header .inner-inner-header .slogan {
+            display: block;
+            position: absolute;
+            margin-left: 200px;
+            margin-top: 40px; } }
 
 .header .inner {
   border-bottom: 1px solid #d9d9da; }
@@ -1346,17 +1350,20 @@ button {
     padding-bottom: 0em; } }
 
 .logo {
-  width: 369px;
-  height: 98px;
+  padding-left: 10px;
+  padding-right: 0px;
+  width: 250px;
+  height: 66px;
   float: left;
   font-family: sans-serif;
   font-style: italic;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-bottom: 1.5em; }
+  font-weight: 400; }
   @media (min-width: 42.5em) {
     .logo {
+      padding-left: 0px;
+      padding-right: 0px;
+      width: 369px;
+      height: 98px;
       float: left;
       font-size: 0.875em;
       line-height: 1.7142857143em;
@@ -1671,6 +1678,7 @@ button {
     font-size: 1.05em; }
     .main-nav ul,
     .mobile-nav .main-nav ul {
+      width: 100%;
       float: left;
       font-size: 0.875em;
       line-height: 1.7142857143em;
@@ -1686,6 +1694,10 @@ button {
       padding-top: 0.6em;
       padding-bottom: 0.6em;
       margin-right: 2em; }
+    .main-nav ul li:last-child,
+    .mobile-nav .main-nav ul li:last-child {
+      float: right;
+      margin-right: 0em !important; }
     .main-nav .main-nav-extra,
     .mobile-nav .main-nav .main-nav-extra {
       float: right; }
@@ -1693,35 +1705,50 @@ button {
       .mobile-nav .main-nav .main-nav-extra li {
         margin-right: 0em !important; } }
 
+.header-nav {
+  padding-top: 0.75em;
+  padding-bottom: 0.75em; }
+  @media (min-width: 42.5em) {
+    .header-nav {
+      padding-top: 0em;
+      padding-bottom: 0em; } }
+
 .main-nav-trigger {
   float: right;
-  width: 2.1em;
-  height: 2.1em;
-  text-indent: -9999px;
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
-  background: #404041 url("../img/icon-menu.png") 50% no-repeat;
-  background-size: auto; }
+  background: 100% url("../img/icon-menu.png") no-repeat no-repeat;
+  background-size: auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 0px;
+  margin-right: 10px;
+  padding-left: 0px;
+  padding-right: 40px; }
   .svg .main-nav-trigger {
-    background: #404041 url("../img/icon-menu.svg") 50% no-repeat;
+    background: 100% url("../img/icon-menu.svg") no-repeat no-repeat;
     background-size: auto; }
   @media (min-width: 42.5em) {
     .main-nav-trigger {
       display: none; } }
 
-.svg .trigger-active,
-.trigger-active {
-  background-color: #0766b1; }
-
 .lan-nav {
-  float: right; }
+  position: absolute;
+  right: 0;
+  padding-left: 0px;
+  padding-right: 10px; }
+  @media (min-width: 42.5em) {
+    .lan-nav {
+      padding-left: 0px;
+      padding-right: 0px;
+      position: relative; } }
   .lan-nav ul {
-    margin-top: 35px;
+    margin-top: 15px;
     float: right;
     font-size: 0.875em;
     line-height: 1.7142857143em;
     margin-bottom: 0em; }
+    @media (min-width: 42.5em) {
+      .lan-nav ul {
+        margin-top: 35px; } }
     .lan-nav ul li, .lan-nav ul a {
       display: block;
       float: left;
@@ -1732,7 +1759,7 @@ button {
     font-weight: 700;
     font-size: 0.8em;
     background-color: #0766b1;
-    margin-left: 0.8em;
+    margin-left: 0.9em;
     padding-top: 0.06em;
     padding-bottom: 0.06em;
     padding-left: 0.35em;

@@ -8,7 +8,7 @@
 	<![endif]-->
 
 	{* Header *}
-	{include:Core/Layout/Templates/Header.tpl}
+	{include:Core/Layout/Templates/NL_Header.tpl}
 
 
 	<main id="main" class="holder main-holder" role="main">

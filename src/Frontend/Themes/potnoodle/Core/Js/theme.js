@@ -32,7 +32,7 @@ jsTheme.mobileNav =
 	// build mobile nav
 	buildMobileNav: function()
 	{
-		var navHolder = $('.header .inner');
+		var navHolder = $('.header .header-nav');
 
 		navHolder.prepend('<span class="main-nav-trigger">menu</span>');
 
