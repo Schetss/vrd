@@ -1992,14 +1992,6 @@ article:last-child {
     text-align: center;
     vertical-align: center;
     cursor: pointer; }
-    .immo-images .box img {
-      margin: 0;
-      padding: 0;
-      min-width: 100%;
-      width: auto;
-      min-height: 100%;
-      height: auto;
-      display: block; }
 
 @media print {
   * {
