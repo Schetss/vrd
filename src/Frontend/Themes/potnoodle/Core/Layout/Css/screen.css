@@ -1388,16 +1388,14 @@ button {
 .main-header-image2 {
   height: 350px;
   overflow: hidden; }
-  .main-header-image2 p img {
-    display: block;
+  .main-header-image2 img {
     margin-top: -200px;
     width: 100%; }
 
 #main-header-image3 {
   height: 350px;
   overflow: hidden; }
-  #main-header-image3 p img {
-    display: block;
+  #main-header-image3 img {
     width: 100%; }
 
 .image-overlay {
@@ -1835,7 +1833,8 @@ button {
       height: 250px;
       overflow: hidden; }
     .article .left img {
-      min-height: 250px; }
+      min-height: 250px;
+      width: 100%; }
   .article .right {
     width: 60%;
     float: right; }
@@ -1921,35 +1920,37 @@ article:last-child {
     background-color: #086ec0;
     text-decoration: none; }
 
-.immo .images {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-  margin-top: 1.5em; }
-  .immo .images img {
-    width: 100%; }
-.immo .immo-intro {
-  margin-top: 1em; }
-.immo .immo-btn {
-  position: absolute;
-  bottom: 0;
-  right: 0; }
-  .immo .immo-btn a {
-    background-color: transparent;
-    background-color: rgba(7, 102, 177, 0.85);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D90766B1,endColorstr=#D90766B1);
-    zoom: 1;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #f9fdff;
-    width: 170px;
-    display: block; }
-  .immo .immo-btn a:hover, .immo .immo-btn a:active, .immo .immo-btn a:visited {
-    background-color: #086ec0;
-    text-decoration: none; }
+.immo {
+  margin-top: 0; }
+  .immo .images {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 1.5em; }
+    .immo .images img {
+      width: 100%; }
+  .immo .immo-intro {
+    margin-top: 1em; }
+  .immo .immo-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .immo .immo-btn a {
+      background-color: transparent;
+      background-color: rgba(7, 102, 177, 0.85);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D90766B1,endColorstr=#D90766B1);
+      zoom: 1;
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #f9fdff;
+      width: 170px;
+      display: block; }
+    .immo .immo-btn a:hover, .immo .immo-btn a:active, .immo .immo-btn a:visited {
+      background-color: #086ec0;
+      text-decoration: none; }
 
 .immo-nav {
   float: left;
@@ -1973,25 +1974,27 @@ article:last-child {
 .immo-bluebox {
   background-color: #0766b1; }
 
-.immo-images {
+#immo-slide-holder {
   width: 100%; }
-  .immo-images .immo-image-large {
-    width: 100%;
-    height: 500px;
-    background-color: #0766b1;
-    margin-bottom: 2em; }
-  .immo-images .box {
-    padding: 0;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    float: left;
-    margin-right: 20px;
-    background-color: #bdbcbf;
-    margin-bottom: 2em;
-    text-align: center;
-    vertical-align: center;
-    cursor: pointer; }
+  #immo-slide-holder #immo-slide-runner {
+    width: 100%; }
+    #immo-slide-holder #immo-slide-runner img {
+      width: 100%; }
+
+.contact-text {
+  width: 49%;
+  float: left;
+  margin-bottom: 1em; }
+  .contact-text h2 {
+    padding-bottom: 0;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    font-size: 1.2em; }
+  .contact-text p {
+    font-size: 1.2em;
+    line-height: 2.2em;
+    margin-top: 0;
+    padding-top: 0; }
 
 @media print {
   * {

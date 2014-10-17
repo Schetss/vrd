@@ -132,10 +132,11 @@ $(window).on("load", function() {
  	// immo image player
  	//
 
- 	
+ 	 //$("#immo-slide-runner img:not(:first)").remove();
 
 
 });
+
 
 
 

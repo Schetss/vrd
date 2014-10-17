@@ -6,17 +6,13 @@
 
 			{option:images}
 			<div class="immo-images">
-				<!-- <h3>{$lblImages|ucfirst}</h3> -->
-				<div class="immo-image-large">
-					<img id="immo-preview-image" src="" />
+				 <div id="immo-slide-holder">
+					<div id="immo-slide-runner">
+						{iteration:images}
+							<img src="{$images.sizes.large}" id="slide-img-{$images.id}" class="slide" alt="{$images.title}" title="{$images.title}" />
+						{/iteration:images}
+					</div>
 				</div>
-				{iteration:images}
-				<div class="box" id="{$images.id}">
-					<!-- <a class="colorbox" rel="group1" href="{$images.sizes.large}" title="{$images.title}"> -->
-						<img src="{$images.sizes.small}" alt="{$images.title}" title="{$images.title}" />
-					<!-- </a> -->
-				</div>
-				{/iteration:images}
 			</div>
 			
 
