@@ -1004,8 +1004,14 @@ h3 {
   font-weight: bold; }
 
 .line-title {
+  margin-left: 10px;
+  margin-right: 0px;
   margin-top: 3.5em;
   margin-bottom: 0em; }
+  @media (min-width: 42.5em) {
+    .line-title {
+      margin-left: 0px;
+      margin-right: 0px; } }
 
 .line-title-text {
   background-color: #f9fdff;
@@ -1488,6 +1494,7 @@ button {
       padding-right: 10px; } }
 
 .footer-holder {
+  line-height: 1.8em;
   background-color: #0766b1;
   color: #f3f3f3;
   padding-top: 0.75em;
@@ -1849,26 +1856,39 @@ button {
   margin-top: 3em; }
 
 .article {
-  clear: both;
   padding-bottom: 3em;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
+  clear: both;
   border-bottom: 1px solid #bdbcbf; }
-  .article .left {
-    width: 35%;
-    float: left; }
-    .article .left .article-image {
-      height: 250px;
-      overflow: hidden; }
-    .article .left img {
-      min-height: 250px;
-      width: 100%; }
+  @media (min-width: 42.5em) {
+    .article {
+      margin-bottom: 3em; } }
+  @media (min-width: 42.5em) {
+    .article .left {
+      width: 35%;
+      float: left; } }
+  .article .left .article-image {
+    height: 250px;
+    overflow: hidden; }
+  .article .left img {
+    min-height: 250px;
+    width: 100%; }
   .article .right {
-    width: 60%;
-    float: right; }
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 42.5em) {
+      .article .right {
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 60%;
+        float: right; } }
     .article .right h2 {
+      margin-top: 0.5em;
       padding-top: 0;
-      margin-top: -0.3em;
       padding-bottom: 0; }
+      @media (min-width: 42.5em) {
+        .article .right h2 {
+          margin-top: -0.3em; } }
     .article .right p {
       float: left; }
   .article .readmore {

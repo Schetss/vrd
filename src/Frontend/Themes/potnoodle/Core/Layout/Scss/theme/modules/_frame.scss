@@ -253,6 +253,7 @@
 //
 
 .footer-holder {
+	line-height: 1.8em;
 	background-color: $alpha-ui-color;
 	color: lighten($alpha-text-color,70);
 	@include padding-tb(0.5,0.5);
