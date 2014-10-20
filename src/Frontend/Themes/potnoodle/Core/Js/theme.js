@@ -8,6 +8,7 @@ var jsTheme =
 		jsTheme.catNav.init();
 		jsTheme.selectNav.init();
 		jsTheme.deleteImages.init();
+		jsTheme.changeDiv.init();
 
 	//	console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
 	}
@@ -92,6 +93,15 @@ jsTheme.selectNav =
             }
         });
 
+	}
+};
+
+
+jsTheme.changeDiv = 
+{
+	init:function()
+	{
+		
 	}
 };
 

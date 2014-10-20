@@ -29,11 +29,44 @@
 
 .main-nav,
 .mobile-nav .main-nav {
+
+	margin-top: 0.8em;
+
+	li {
+		border-top: 1px solid $gamma-ui-color;
+		//@include padding-tb(0.4,0.4);
+	}
+
+	ul {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		@include padding-tb(0.4,0.4);
+		@include px-padding-lr(1,0);
+	}
+
+	.selected a, {
+		background-color: $alpha-ui-color;
+		color: $beta-text-color;
+	}
+
+
+	li:last-child a {
+		@include padding-tb(0.4,0);
+	}
+
+
+
 	@include mq($bp3) {
 		display: block !important;
 		width: 100%;
 		float: left;
 		font-size: 1.05em;
+		margin-top: 0;
 
 		ul {
 			width: 100%;
@@ -43,6 +76,7 @@
 		}
 
 		li {
+			border: 0;
 			// @include px-margin-lr(1,0);
 			@include padding-tb(0.4, 0.4);
 			margin-right: 2em;
@@ -60,6 +94,21 @@
 			}
 		}
 
+
+		li:last-child a {
+			@include padding-tb(0.4,0.4);
+		}
+
+		a {
+			@include px-padding-lr(0,0);
+		}
+
+		.selected a, {
+		background: none;
+		color: $alpha-ui-color;
+	}
+
+
 	}
 
 }
@@ -73,7 +122,9 @@
 }
 
 .main-nav-trigger {
+	cursor: pointer;
 	//dihttp://vrdfork:8888/nlsplay: block;
+	color: $beta-ui-color;
 	float: right;
 	//width: 2.1em;
 	//height: 2.1em;
@@ -83,7 +134,7 @@
 	font-size: 1.2em;
 	font-weight: bold;
 	@include px-margin-lr(0,1);
-	@include px-padding-lr(0,4);
+	@include px-padding-lr(0,4.5);
 
 	@include mq($bp3) {
 		display: none;
@@ -128,14 +179,17 @@
 		font-size: 0.8em;
 		
 		background-color: $alpha-ui-color;
-		margin-left: 0.9em;
+		margin-left: 1em;
 		@include padding-tb(0.04,0.04);
 		padding-left: 0.35em;
 		padding-right: 0.35em;
 		border-radius: 3px;
 		border: 1px solid $alpha-ui-color;
-	}
 
+		@include mq($bp3) {
+			margin-left: 0.9em;
+		}
+	}
 
 	.selected a{
 		color: $alpha-ui-color;
@@ -151,55 +205,109 @@
 #selector {
 
 	.selector-picture {
-		width: 24.9%;
+		margin-bottom: 0.2em;
 		float: left;
-		margin-right: 0.13%;
 		overflow: hidden;
-		height: 350px;
+		height: 100px;
+		
+		@include mq($bp3) {
+			width: 24.9%;
+			margin-right: 0.13%;
+			height: 350px;
+			margin-bottom: 0;
+		}
+
 
 		.selector-img {
-			max-width: 400px;
 			margin-left: auto;
 			margin-right: auto;
+			width: 100%;
+			margin-top: -100px;
+
+			@include mq($bp3) {
+				max-width: 400px;
+				width: auto;
+				margin-top: 0;
+			}			
 		}
 
 		p {
-			@include background-opacity($alpha-link-color, 0.85);
-			position: absolute;
-			width: 24.9%;
-			height: 50px;
-			margin-top: 300px;
-			text-align: center;
-			padding-top: 10px;
+			@include px-padding-lr(1,0);
+			padding-top: 50px;
+			display: block; 
+			width: 100%;
+			height: 100px;
 			color: $bg;
-			font-size: 1.1em;
+			font-size: 1.5em;
 			font-weight: 600;
+			position: absolute;
+			@include background-opacity($alpha-link-color, 0.49);
+
+			@include mq($bp3) {
+				@include background-opacity($alpha-link-color, 0.85);
+				@include px-padding-lr(0,0);
+				width: 24.9%;
+				height: 50px;
+				margin-top: 300px;
+				text-align: center;
+				padding-top: 10px;
+				font-size: 1.1em;
+			}
 		}
 	}
-
 	.selector-picture-right {
-		width: 24.9%;
-		float: right;
-		overflow: hidden;
-		height: 350px;
+			overflow: hidden;
+			margin-bottom: 0.2em;
+			float: left;
+			overflow: hidden;
+			height: 100px;
 
+		@include mq($bp3) {
+			width: 24.9%;
+			float: right;
+			height: 350px;
+			margin-bottom: 0;
+		}
+		
+	
+		
+		
 		.selector-img {
-			max-width: 400px;
 			margin-left: auto;
 			margin-right: auto;
+			width: 100%;
+			margin-top: -150px;
+
+			@include mq($bp3) {
+				max-width: 400px;
+				width: auto;
+				margin-top: 0;
+			}
+			
 		}
 
 		p {
-			@include background-opacity($alpha-link-color, 0.85);
-			position: absolute;
-			width: 24.9%;
-			height: 50px;
-			margin-top: 300px;
-			text-align: center;
-			padding-top: 10px;
+			@include px-padding-lr(1,0);
+			padding-top: 50px;
+			display: block; 
+			width: 100%;
+			height: 100px;
 			color: $bg;
-			font-size: 1.2em;
+			font-size: 1.5em;
 			font-weight: 600;
+			position: absolute;
+			@include background-opacity($alpha-link-color, 0.49);
+
+			@include mq($bp3) {
+				@include background-opacity($alpha-link-color, 0.85);
+				@include px-padding-lr(0,0);
+				width: 24.9%;
+				height: 50px;
+				margin-top: 300px;
+				text-align: center;
+				padding-top: 10px;
+				font-size: 1.1em;
+			}
 		}
 	}
 
@@ -209,6 +317,7 @@
 // Navigation index
 
 #selector2 {
+
 	position: absolute;
 	top: 0;
 	width: 100%;
