@@ -23,7 +23,8 @@
                         {option:immo.images}
                             <div class="images clearfix">
                                 {iteration:immo.images}
-                                    <img src="{$immo.images.sizes.large}" alt="{$immo.images.title}" title="{$immo.images.title}" />
+                                <a href="{$immo.full_url}" title="{$immo.title}">
+                                    <img src="{$immo.images.sizes.large}" alt="{$immo.images.title}" title="{$immo.images.title}" /></a>
                                 {/iteration:immo.images}
                                  <div class="immo-btn">
                                     <a href="{$immo.full_url}" title="{$immo.title}">Meer informatie</a>

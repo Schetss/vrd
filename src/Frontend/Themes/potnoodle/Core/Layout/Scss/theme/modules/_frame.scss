@@ -181,11 +181,26 @@
 }
 
 #main-header-image3 {
-	height: 350px;
 	overflow: hidden;
+	height: 200px;
+
+	@include mq($bp3) {
+		height: 250px;
+	}
+
+	@include mq($bp4) {
+		height: 300px;
+	}
+
+	@include mq($bp5) {
+		height: 350px;
+	}
 
 	img {
-		width: 100%;
+		width: 150%;
+		@include mq($bp3) {		
+			width: 100%;
+		}
 	}
 }
 
@@ -288,6 +303,11 @@
 	}
 
 	.text {
+		@include px-padding-lr(1,1);
+
+		@include mq($bp3) {
+			@include px-padding-lr(0,0);
+		}
 
 		p {
 			//font-family: $delta-font-family;

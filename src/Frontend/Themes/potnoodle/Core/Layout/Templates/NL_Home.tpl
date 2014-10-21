@@ -9,10 +9,9 @@
 
 	{* Header *}
 	{include:Core/Layout/Templates/NL_Header.tpl}
-
+	
 
 	<main id="main" class="holder main-holder" role="main">
-
 		<div id="selector">
 			<div class="selector-picture">
 				<a href="/nl/het-bedrijf/distributie">

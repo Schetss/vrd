@@ -1451,10 +1451,22 @@ button {
         width: 100%; } }
 
 #main-header-image3 {
-  height: 350px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 200px; }
+  @media (min-width: 42.5em) {
+    #main-header-image3 {
+      height: 250px; } }
+  @media (min-width: 60em) {
+    #main-header-image3 {
+      height: 300px; } }
+  @media (min-width: 71.25em) {
+    #main-header-image3 {
+      height: 350px; } }
   #main-header-image3 img {
-    width: 100%; }
+    width: 150%; }
+    @media (min-width: 42.5em) {
+      #main-header-image3 img {
+        width: 100%; } }
 
 .image-overlay {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
@@ -1533,16 +1545,23 @@ button {
       #main .content {
         padding-left: 50px;
         padding-right: 50px; } }
-  #main .text p {
-    font-size: 1.25em;
-    margin-bottom: 1em; }
-  #main .text .left {
-    width: 48%;
-    border-right: 1px solid #bdbcbf;
-    float: left; }
-  #main .text .right {
-    width: 47%;
-    float: right; }
+  #main .text {
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 42.5em) {
+      #main .text {
+        padding-left: 0px;
+        padding-right: 0px; } }
+    #main .text p {
+      font-size: 1.25em;
+      margin-bottom: 1em; }
+    #main .text .left {
+      width: 48%;
+      border-right: 1px solid #bdbcbf;
+      float: left; }
+    #main .text .right {
+      width: 47%;
+      float: right; }
 
 .doormat-holder {
   padding-bottom: 1.5em; }
@@ -1769,10 +1788,14 @@ button {
   .mobile-nav .main-nav .selected a {
     background-color: #0766b1;
     color: #f9fdff; }
-  .main-nav li:last-child a,
-  .mobile-nav .main-nav li:last-child a {
+  .main-nav li:last-child a, .main-nav li:last-child a:hover, .main-nav li:last-child a:visited, .main-nav li:last-child a:active,
+  .mobile-nav .main-nav li:last-child a,
+  .mobile-nav .main-nav li:last-child a:hover,
+  .mobile-nav .main-nav li:last-child a:visited,
+  .mobile-nav .main-nav li:last-child a:active {
     padding-top: 0.6em;
-    padding-bottom: 0em; }
+    padding-bottom: 0em;
+    color: #054476; }
   @media (min-width: 42.5em) {
     .main-nav,
     .mobile-nav .main-nav {
@@ -1797,8 +1820,6 @@ button {
       .main-nav li,
       .mobile-nav .main-nav li {
         border: 0;
-        padding-top: 0.6em;
-        padding-bottom: 0.6em;
         margin-right: 2em; }
       .main-nav ul li:last-child,
       .mobile-nav .main-nav ul li:last-child {
@@ -1822,6 +1843,10 @@ button {
       .mobile-nav .main-nav .selected a {
         background: none;
         color: #0766b1; } }
+
+@media (min-width: 42.5em) {
+  .main-nav-sub {
+    display: none; } }
 
 .header-nav {
   padding-top: 0.75em;
@@ -1996,9 +2021,13 @@ button {
         font-size: 1.1em; } }
 
 #selector2 {
+  display: none;
   position: absolute;
   top: 0;
   width: 100%; }
+  @media (min-width: 42.5em) {
+    #selector2 {
+      display: block; } }
   #selector2 ul {
     padding: 0;
     float: left;
@@ -2208,17 +2237,23 @@ article:last-child {
   .immo .images {
     position: relative;
     width: 100%;
-    height: 350px;
     overflow: hidden;
     margin-top: 1.5em; }
+    @media (min-width: 42.5em) {
+      .immo .images {
+        height: 350px; } }
     .immo .images img {
       width: 100%; }
   .immo .immo-intro {
     margin-top: 1em; }
   .immo .immo-btn {
+    margin-top: -3em;
     position: absolute;
-    bottom: 0;
     right: 0; }
+    @media (min-width: 42.5em) {
+      .immo .immo-btn {
+        bottom: 0;
+        margin-top: 0; } }
     .immo .immo-btn a {
       background-color: transparent;
       background-color: rgba(7, 102, 177, 0.85);

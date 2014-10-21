@@ -13,6 +13,7 @@
 	<main id="main" class="holder main-holder" role="main">
 		<div class="main-header">
 			<div {option:!item.images}class="main-header-image"{/option:!item.images}{option:item.images}id="main-header-image3"{/option:item.images}>
+				
 				{option:item.images}
 					{iteration:images}
 					<img class="immo-head-img" src="{$images.sizes.large}" />
@@ -32,7 +33,7 @@
 						{/iteration:positionImage}
 					{/option:positionImage}
 				{/option:!item.images}
-			}
+			
 			</div>	
 			{option:!item.images}
 				<div class="image-overlay"></div>

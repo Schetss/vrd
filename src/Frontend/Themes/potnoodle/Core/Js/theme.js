@@ -7,9 +7,6 @@ var jsTheme =
 		jsTheme.forms.init();
 		jsTheme.catNav.init();
 		jsTheme.selectNav.init();
-		jsTheme.deleteImages.init();
-		jsTheme.changeDiv.init();
-
 	//	console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
 	}
 
@@ -33,9 +30,9 @@ jsTheme.mobileNav =
 	// build mobile nav
 	buildMobileNav: function()
 	{
-		var navHolder = $('.header .header-nav');
+		//var navHolder = $('.header .header-nav');
 
-		navHolder.prepend('<span class="main-nav-trigger">menu</span>');
+		//navHolder.prepend('<span class="main-nav-trigger">menu</span>');
 
 		var trigger = $('.main-nav-trigger');
 		var nav = $('.main-nav');
@@ -93,15 +90,6 @@ jsTheme.selectNav =
             }
         });
 
-	}
-};
-
-
-jsTheme.changeDiv = 
-{
-	init:function()
-	{
-		
 	}
 };
 

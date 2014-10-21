@@ -22,8 +22,9 @@
 
 			{* Navigation *}
 			<div class="row header-nav">
+				<span class="main-nav-trigger">menu</span>
 				<nav class="main-nav">
-					{$var|getnavigation:'page':0:1}
+					{$var|getnavigation:'page':0:2}
 				</nav>
 				<div class="clear"></div>
 			</div>

@@ -55,8 +55,11 @@
 	}
 
 
-	li:last-child a {
-		@include padding-tb(0.4,0);
+	li:last-child {
+		a, a:hover, a:visited, a:active {
+			@include padding-tb(0.4,0);
+			color: darken($alpha-ui-color,12);
+		}
 	}
 
 
@@ -78,13 +81,14 @@
 		li {
 			border: 0;
 			// @include px-margin-lr(1,0);
-			@include padding-tb(0.4, 0.4);
+			//@include padding-tb(0.4, 0.4);
 			margin-right: 2em;
 		}
 
 		ul li:last-child {
     		float: right;
     		margin-right: 0em !important;
+
 		}
 
 		.main-nav-extra {
@@ -112,6 +116,20 @@
 	}
 
 }
+
+//
+// sub navigation
+//
+
+.main-nav-sub {
+
+	@include mq($bp3) {
+		display: none;
+	}
+}
+
+
+
 
 .header-nav {
 	@include padding-tb(0.5,0.5);
@@ -317,6 +335,11 @@
 // Navigation index
 
 #selector2 {
+	display: none;
+
+	@include mq($bp3) {
+		display: block;
+	}
 
 	position: absolute;
 	top: 0;
