@@ -31,6 +31,10 @@
 		Add your font license here, if necessary.
 	-->
 
+	{* Fonts *}
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+
 	{* Windows 8 tile *}
 	<meta name="application-name" content="{$siteTitle}"/>
 	<meta name="msapplication-TileColor" content="#3380aa"/>
@@ -47,4 +51,6 @@
 
 	{* Site wide HTML *}
 	{$siteHTMLHeader}
+
+
 </head>

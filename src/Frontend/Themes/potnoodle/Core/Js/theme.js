@@ -3,7 +3,7 @@ var jsTheme =
 	// init, something like a constructor
 	init: function()
 	{
-		jsTheme.mobileNav.init();
+		// jsTheme.mobileNav.init();
 		jsTheme.forms.init();
 		jsTheme.catNav.init();
 		jsTheme.selectNav.init();
@@ -12,38 +12,38 @@ var jsTheme =
 
 };
 
-jsTheme.mobileNav =
-{
-	init: function()
-	{
-		jsTheme.mobileNav.enableMobileNav();
-		jsTheme.mobileNav.buildMobileNav();
-	},
+// jsTheme.mobileNav =
+// {
+// 	init: function()
+// 	{
+// 	// 	jsTheme.mobileNav.enableMobileNav();
+// 	// 	jsTheme.mobileNav.buildMobileNav();
+// 	// },
 
-	// CSS is based on the class .mobile-nav
-	//
-	enableMobileNav: function()
-	{
-		$("html").addClass("mobile-nav");
-	},
+// 	// // CSS is based on the class .mobile-nav
+// 	// //
+// 	// enableMobileNav: function()
+// 	// {
+// 	// 	$("html").addClass("mobile-nav");
+// 	// },
 
-	// build mobile nav
-	buildMobileNav: function()
-	{
-		//var navHolder = $('.header .header-nav');
+// 	// // build mobile nav
+// 	// buildMobileNav: function()
+// 	// {
+// 	// 	//var navHolder = $('.header .header-nav');
 
-		//navHolder.prepend('<span class="main-nav-trigger">menu</span>');
+// 	// 	//navHolder.prepend('<span class="main-nav-trigger">menu</span>');
 
-		var trigger = $('.main-nav-trigger');
-		var nav = $('.main-nav');
+// 	// 	var trigger = $('.main-nav-trigger');
+// 	// 	var nav = $('.main-nav');
 
-		trigger.on('click', function() {
-			nav.toggle();
-			$(this).toggleClass("trigger-active");
-		});
-	}
+// 	// 	trigger.on('click', function() {
+// 	// 		nav.toggle();
+// 	// 		$(this).toggleClass("trigger-active");
+// 	// 	});
+// 	}
 
-};
+// };
 
 jsTheme.forms =
 {
@@ -125,15 +125,31 @@ $(window).on("load", function() {
  	//$("#main-header-image2 img").remove();
  	$("#main-header-image3 img:not(:first)").remove();
 
+ 	$('.main-nav').hide();
+
+ 	$('.main-nav-trigger').on('click', function(){
+ 		$('.main-nav').toggle();
+ 	});
 
  	//
  	// immo image player
  	//
 
+		// trigger.on('click', function() {
+		// 	nav.toggle();
+		// 	$(this).toggleClass("trigger-active");
+		// });
  	 //$("#immo-slide-runner img:not(:first)").remove();
-
-
 });
+
+$(document).ready(function(){
+$(".main").onepage_scroll({
+ 	sectionContainer: "section",
+responsiveFallback: 600,
+loop: true
+});
+});
+
 
 
 

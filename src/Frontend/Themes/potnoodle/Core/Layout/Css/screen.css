@@ -35,7 +35,7 @@ button {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
@@ -948,7 +948,7 @@ html {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  font: 400 100%/1.5 sans-serif; }
+  font: 400 100%/1.5 "Open Sans", sans-serif; }
   @media (min-width: 71.25em) {
     html {
       font-size: 112.5%; } }
@@ -989,7 +989,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-rendering: optimizelegibility; }
 
@@ -1073,7 +1073,7 @@ blockquote {
 table {
   text-align: left;
   width: 100%;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-spacing: 0;
   border-collapse: collapse;
   font-size: 0.875em;
@@ -1081,7 +1081,7 @@ table {
   margin-bottom: 3.4285714286em; }
 
 caption {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: left;
   border-bottom: 1px solid silver;
   font-weight: 700;
@@ -1151,7 +1151,7 @@ textarea {
   border-radius: 5px;
   border: 1px solid #bdbcbf;
   color: #8c8c8e;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   width: 100%;
   display: block;
@@ -1246,15 +1246,15 @@ textarea {
   height: auto; }
 
 ::-webkit-input-placeholder {
-  font-family: serif;
+  font-family: "Merriweather", serif;
   font-style: italic; }
 
 ::-moz-placeholder {
-  font-family: serif;
+  font-family: "Merriweather", serif;
   font-style: italic; }
 
 :-ms-input-placeholder {
-  font-family: serif;
+  font-family: "Merriweather", serif;
   font-style: italic; }
 
 input[type="submit"],
@@ -1364,7 +1364,7 @@ button {
   width: 250px;
   height: 66px;
   float: left;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-weight: 400; }
   @media (min-width: 42.5em) {
@@ -1749,7 +1749,7 @@ button {
   float: left;
   width: 100%; }
   .main-nav ul {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -1769,13 +1769,13 @@ button {
 .main-nav,
 .mobile-nav .main-nav {
   margin-top: 0.8em; }
-  .main-nav li,
-  .mobile-nav .main-nav li {
-    border-top: 1px solid #bdbcbf; }
   .main-nav ul,
   .mobile-nav .main-nav ul {
     padding-bottom: 0;
     margin-bottom: 0; }
+  .main-nav li,
+  .mobile-nav .main-nav li {
+    border-top: 1px solid #bdbcbf; }
   .main-nav a,
   .mobile-nav .main-nav a {
     display: block;
@@ -1784,18 +1784,19 @@ button {
     padding-bottom: 0.6em;
     padding-left: 10px;
     padding-right: 0px; }
-  .main-nav .selected a,
-  .mobile-nav .main-nav .selected a {
-    background-color: #0766b1;
-    color: #f9fdff; }
+  .main-nav .selected,
+  .mobile-nav .main-nav .selected {
+    background-color: #0766b1; }
+    .main-nav .selected a,
+    .mobile-nav .main-nav .selected a {
+      color: #f9fdff; }
   .main-nav li:last-child a, .main-nav li:last-child a:hover, .main-nav li:last-child a:visited, .main-nav li:last-child a:active,
   .mobile-nav .main-nav li:last-child a,
   .mobile-nav .main-nav li:last-child a:hover,
   .mobile-nav .main-nav li:last-child a:visited,
   .mobile-nav .main-nav li:last-child a:active {
     padding-top: 0.6em;
-    padding-bottom: 0em;
-    color: #054476; }
+    padding-bottom: 0em; }
   @media (min-width: 42.5em) {
     .main-nav,
     .mobile-nav .main-nav {
@@ -1839,14 +1840,32 @@ button {
       .mobile-nav .main-nav a {
         padding-left: 0px;
         padding-right: 0px; }
-      .main-nav .selected a,
-      .mobile-nav .main-nav .selected a {
-        background: none;
-        color: #0766b1; } }
+      .main-nav .selected,
+      .mobile-nav .main-nav .selected {
+        background: none; }
+        .main-nav .selected a,
+        .mobile-nav .main-nav .selected a {
+          color: #0766b1; } }
 
 @media (min-width: 42.5em) {
   .main-nav-sub {
     display: none; } }
+.main-nav-sub ul li {
+  background-color: #f9fdff; }
+  .main-nav-sub ul li a, .main-nav-sub ul li a:hover, .main-nav-sub ul li a:visited, .main-nav-sub ul li a:active {
+    padding-top: 0.45em;
+    padding-bottom: 0.45em;
+    color: #0766b1;
+    padding-left: 30px;
+    padding-right: 0px;
+    font-size: 0.9em; }
+.main-nav-sub ul li:last-child a, .main-nav-sub ul li:last-child a:hover, .main-nav-sub ul li:last-child a:visited, .main-nav-sub ul li:last-child a:active {
+  padding-top: 0.45em;
+  padding-bottom: 0.45em; }
+.main-nav-sub ul .selected {
+  background-color: #0766b1; }
+  .main-nav-sub ul .selected a, .main-nav-sub ul .selected a:hover, .main-nav-sub ul .selected a:visited, .main-nav-sub ul .selected a:active {
+    color: #f9fdff; }
 
 .header-nav {
   padding-top: 0.75em;
@@ -1927,8 +1946,11 @@ button {
     #selector .selector-picture {
       width: 24.9%;
       margin-right: 0.13%;
-      height: 350px;
+      height: 300px;
       margin-bottom: 0; } }
+  @media (min-width: 60em) {
+    #selector .selector-picture {
+      height: 350px; } }
   #selector .selector-picture .selector-img {
     margin-left: auto;
     margin-right: auto;
@@ -1964,10 +1986,13 @@ button {
         padding-right: 0px;
         width: 24.9%;
         height: 50px;
-        margin-top: 300px;
+        margin-top: 250px;
         text-align: center;
         padding-top: 10px;
         font-size: 1.1em; } }
+    @media (min-width: 60em) {
+      #selector .selector-picture p {
+        margin-top: 300px; } }
 #selector .selector-picture-right {
   overflow: hidden;
   margin-bottom: 0.2em;
@@ -1978,8 +2003,11 @@ button {
     #selector .selector-picture-right {
       width: 24.9%;
       float: right;
-      height: 350px;
+      height: 300px;
       margin-bottom: 0; } }
+  @media (min-width: 60em) {
+    #selector .selector-picture-right {
+      height: 350px; } }
   #selector .selector-picture-right .selector-img {
     margin-left: auto;
     margin-right: auto;
@@ -2015,10 +2043,13 @@ button {
         padding-right: 0px;
         width: 24.9%;
         height: 50px;
-        margin-top: 300px;
+        margin-top: 250px;
         text-align: center;
         padding-top: 10px;
         font-size: 1.1em; } }
+    @media (min-width: 60em) {
+      #selector .selector-picture-right p {
+        margin-top: 300px; } }
 
 #selector2 {
   display: none;
@@ -2029,22 +2060,19 @@ button {
     #selector2 {
       display: block; } }
   #selector2 ul {
-    padding: 0;
-    float: left;
-    width: 100%; }
-  #selector2 li {
     background-color: transparent;
     background-color: rgba(7, 102, 177, 0.85);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#D90766B1,endColorstr=#D90766B1);
     zoom: 1;
+    padding: 0;
+    float: left;
+    width: 100%; }
+  #selector2 li {
+    border-right: 1px solid #0874ca;
     text-align: center;
     float: left;
     list-style-type: none;
-    margin-right: 0.17em;
-    width: 24.8%; }
-  #selector2 li:nth-child(4) {
-    margin-right: 0em;
-    float: right; }
+    width: 24.99%; }
   #selector2 a, #selector2 a:hover, #selector2 a:active, #selector2 a:visited {
     color: #f9fdff;
     text-decoration: none;
@@ -2148,9 +2176,9 @@ article:last-child {
       margin-top: 2em;
       margin-bottom: 2em; } }
   .content p {
-    font-family: serif;
-    font-size: 1.3em;
-    line-height: 1.8em; }
+    font-family: "Merriweather", serif;
+    font-size: 1.15em;
+    line-height: 2em; }
   .content img {
     margin-top: 0.15em;
     margin-bottom: 0.15em;
@@ -2264,7 +2292,7 @@ article:last-child {
       padding-left: 20px;
       padding-right: 20px;
       color: #f9fdff;
-      width: 170px;
+      width: 180px;
       display: block; }
     .immo .immo-btn a:hover, .immo .immo-btn a:active, .immo .immo-btn a:visited {
       background-color: #086ec0;
@@ -2274,7 +2302,7 @@ article:last-child {
   float: left;
   width: 100%; }
   .immo-nav ul {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     list-style: none;
     margin: 0;
     padding: 0; }

@@ -32,14 +32,14 @@
 
 	margin-top: 0.8em;
 
-	li {
-		border-top: 1px solid $gamma-ui-color;
-		//@include padding-tb(0.4,0.4);
-	}
-
 	ul {
 		padding-bottom: 0;
 		margin-bottom: 0;
+	}
+
+	li {
+		border-top: 1px solid $gamma-ui-color;
+		//@include padding-tb(0.4,0.4);
 	}
 
 	a {
@@ -49,18 +49,25 @@
 		@include px-padding-lr(1,0);
 	}
 
-	.selected a, {
+	.selected {
 		background-color: $alpha-ui-color;
+		a {
 		color: $beta-text-color;
+		}
+
+		
 	}
 
 
 	li:last-child {
 		a, a:hover, a:visited, a:active {
 			@include padding-tb(0.4,0);
-			color: darken($alpha-ui-color,12);
+			//color: darken($alpha-ui-color,12);
 		}
+
 	}
+
+
 
 
 
@@ -107,10 +114,12 @@
 			@include px-padding-lr(0,0);
 		}
 
-		.selected a, {
-		background: none;
-		color: $alpha-ui-color;
-	}
+		.selected {
+			background: none;
+			a {
+			color: $alpha-ui-color;
+			}
+		}
 
 
 	}
@@ -125,6 +134,33 @@
 
 	@include mq($bp3) {
 		display: none;
+	}
+
+	ul {
+		li {
+			background-color: $beta-text-color;
+			a, a:hover, a:visited, a:active {
+				@include padding-tb(0.3,0.3);
+				color: $alpha-ui-color;
+				@include px-padding-lr(3,0);
+				font-size: 0.9em;
+			}
+		}
+
+		li:last-child {
+			a, a:hover, a:visited, a:active {
+				@include padding-tb(0.3,0.3);
+			}
+		}
+
+		.selected {
+			background-color: $alpha-ui-color;
+			a, a:hover, a:visited, a:active {
+				color: $beta-text-color;
+			}
+		}
+
+		
 	}
 }
 
@@ -227,12 +263,17 @@
 		float: left;
 		overflow: hidden;
 		height: 100px;
+
 		
 		@include mq($bp3) {
 			width: 24.9%;
 			margin-right: 0.13%;
-			height: 350px;
+			height: 300px;
 			margin-bottom: 0;
+		}
+
+		@include mq($bp4) {
+			height: 350px;
 		}
 
 
@@ -266,10 +307,14 @@
 				@include px-padding-lr(0,0);
 				width: 24.9%;
 				height: 50px;
-				margin-top: 300px;
+				margin-top: 250px;
 				text-align: center;
 				padding-top: 10px;
 				font-size: 1.1em;
+			}
+
+			@include mq($bp4) {
+				margin-top: 300px;
 			}
 		}
 	}
@@ -283,9 +328,12 @@
 		@include mq($bp3) {
 			width: 24.9%;
 			float: right;
-			height: 350px;
+			height: 300px;
 			margin-bottom: 0;
 		}
+		@include mq($bp4) {
+				height: 350px;
+			}
 		
 	
 		
@@ -321,10 +369,14 @@
 				@include px-padding-lr(0,0);
 				width: 24.9%;
 				height: 50px;
-				margin-top: 300px;
+				margin-top: 250px;
 				text-align: center;
 				padding-top: 10px;
 				font-size: 1.1em;
+			}
+
+			@include mq($bp4) {
+				margin-top: 300px;
 			}
 		}
 	}
@@ -346,24 +398,19 @@
 	width: 100%;
 
 	ul {
+		@include background-opacity($alpha-ui-color, 0.85);
 		padding: 0;
 		float: left;
 		width: 100%;
 	}
 
 	li {
-		@include background-opacity($alpha-ui-color, 0.85);
+		border-right: 1px solid lighten($alpha-ui-color,5);
 		text-align: center;
 		float: left;
 		list-style-type: none;
-		margin-right: 0.17em;
-		width: 24.8%;
-	}
-
-	li:nth-child(4) {
-   		margin-right: 0em;
-   		float: right;
-	}
+		width: 24.99%;
+		}
 
 	a, a:hover, a:active, a:visited {
 		color: $beta-text-color;
