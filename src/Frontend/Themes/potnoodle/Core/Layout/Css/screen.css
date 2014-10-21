@@ -1025,11 +1025,11 @@ hr {
   border: 1px solid #404041; }
 
 h1 {
+  color: #f9fdff;
   font-size: 2.827145944em;
   line-height: 1.2379976377;
   padding-top: 0.4642491141em;
-  padding-bottom: 0.4642491141em;
-  color: #f9fdff; }
+  padding-bottom: 0.4642491141em; }
 
 h2 {
   font-size: 1.6em;
@@ -1046,6 +1046,9 @@ h6 {
   line-height: 1.75;
   padding-top: 1.3125em;
   padding-bottom: 0.4375em; }
+
+.nowrap {
+  white-space: nowrap; }
 
 p,
 ol,
@@ -1382,28 +1385,70 @@ button {
   .main-header p {
     padding: 0; }
   .main-header .main-title {
-    margin-top: 2.8em;
+    margin-left: 10px;
+    margin-right: 10px;
     position: absolute;
     top: 0;
-    padding: 0; }
+    padding: 0;
+    margin-top: 1.2em;
+    font-size: 2.1em; }
+    @media (min-width: 42.5em) {
+      .main-header .main-title {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 2.8em;
+        font-size: 3em; } }
   .main-header .item-title {
     position: absolute;
     bottom: 0;
     padding: 0;
-    margin-bottom: 1.5em; }
+    margin-bottom: 0.7em;
+    font-size: 2.3em;
+    margin-left: 10px;
+    margin-right: 10px; }
+    @media (min-width: 42.5em) {
+      .main-header .item-title {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 1.5em;
+        font-size: 2.9em; } }
 
 .main-header-image {
-  height: 250px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100px; }
+  @media (min-width: 42.5em) {
+    .main-header-image {
+      height: 200px; } }
+  @media (min-width: 60em) {
+    .main-header-image {
+      height: 220px; } }
+  @media (min-width: 71.25em) {
+    .main-header-image {
+      height: 250px; } }
   .main-header-image p img {
-    width: 100%; }
+    width: 150%; }
+    @media (min-width: 60em) {
+      .main-header-image p img {
+        width: 100%; } }
 
 .main-header-image2 {
-  height: 350px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 200px; }
+  @media (min-width: 42.5em) {
+    .main-header-image2 {
+      height: 250px; } }
+  @media (min-width: 60em) {
+    .main-header-image2 {
+      height: 300px; } }
+  @media (min-width: 71.25em) {
+    .main-header-image2 {
+      height: 350px; } }
   .main-header-image2 img {
-    margin-top: -200px;
-    width: 100%; }
+    width: 150%; }
+    @media (min-width: 42.5em) {
+      .main-header-image2 img {
+        margin-top: -200px;
+        width: 100%; } }
 
 #main-header-image3 {
   height: 350px;
@@ -1417,10 +1462,19 @@ button {
   background: -moz-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
   background: linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
   background: -ms-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
-  height: 250px;
   width: 100%;
   position: absolute;
-  top: 0; }
+  top: 0;
+  height: 100px; }
+  @media (min-width: 42.5em) {
+    .image-overlay {
+      height: 200px; } }
+  @media (min-width: 60em) {
+    .image-overlay {
+      height: 220px; } }
+  @media (min-width: 71.25em) {
+    .image-overlay {
+      height: 250px; } }
 
 .image-overlay-detail {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
@@ -1428,16 +1482,29 @@ button {
   background: -moz-linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
   background: linear-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
   background: -ms-gradient(rgba(0, 0, 0, 0.01) 5%, black 130%);
-  height: 350px;
   width: 100%;
   position: absolute;
-  top: 0; }
+  top: 0;
+  height: 200px; }
+  @media (min-width: 42.5em) {
+    .image-overlay-detail {
+      height: 250px; } }
+  @media (min-width: 60em) {
+    .image-overlay-detail {
+      height: 300px; } }
+  @media (min-width: 71.25em) {
+    .image-overlay-detail {
+      height: 350px; } }
 
 .bluebox, .bluebox2 {
   background-color: #0766b1;
   color: #f9fdff;
-  padding-left: 50px;
-  padding-right: 50px; }
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 42.5em) {
+    .bluebox, .bluebox2 {
+      padding-left: 50px;
+      padding-right: 50px; } }
   .bluebox p, .bluebox2 p {
     font-size: 1.04em;
     line-height: 2.5em; }
@@ -1460,8 +1527,12 @@ button {
 #main {
   padding-bottom: 2em; }
   #main .content {
-    padding-left: 50px;
-    padding-right: 50px; }
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 42.5em) {
+      #main .content {
+        padding-left: 50px;
+        padding-right: 50px; } }
   #main .text p {
     font-size: 1.25em;
     margin-bottom: 1em; }
@@ -1952,7 +2023,10 @@ button {
     display: block; }
 
 .article-index {
-  margin-top: 3em; }
+  margin-top: 1em; }
+  @media (min-width: 42.5em) {
+    .article-index {
+      margin-top: 3em; } }
 
 .article {
   padding-bottom: 3em;
@@ -1969,9 +2043,22 @@ button {
   .article .left .article-image {
     height: 250px;
     overflow: hidden; }
+    @media (min-width: 42.5em) {
+      .article .left .article-image {
+        height: 200px; } }
+    @media (min-width: 60em) {
+      .article .left .article-image {
+        height: 250px; } }
   .article .left img {
     min-height: 250px;
     width: 100%; }
+    @media (min-width: 42.5em) {
+      .article .left img {
+        min-height: 200px;
+        width: 100%; } }
+    @media (min-width: 60em) {
+      .article .left img {
+        min-height: 250px; } }
   .article .right {
     padding-left: 10px;
     padding-right: 10px; }
@@ -2005,7 +2092,8 @@ button {
 
 article:last-child {
   border: 0;
-  padding-bottom: 0em; }
+  padding-bottom: 0em;
+  margin-bottom: 0; }
 
 .index-news {
   margin-top: 2em; }
@@ -2025,20 +2113,30 @@ article:last-child {
     padding-bottom: 0.75em; }
 
 .content {
-  margin-top: 2em;
-  margin-bottom: 2em; }
+  margin-top: 1em; }
+  @media (min-width: 42.5em) {
+    .content {
+      margin-top: 2em;
+      margin-bottom: 2em; } }
   .content p {
     font-family: serif;
     font-size: 1.3em;
     line-height: 1.8em; }
   .content img {
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
     display: block;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    width: 70%;
-    max-width: none; }
+    width: 110%;
+    max-width: none;
+    margin-left: -10px;
+    margin-right: -10px; }
+    @media (min-width: 42.5em) {
+      .content img {
+        width: 70%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        margin-left: auto;
+        margin-right: auto; } }
   .content footer {
     border-top: 1px solid #bdbcbf;
     border-bottom: 1px solid #bdbcbf;
@@ -2048,22 +2146,38 @@ article:last-child {
     font-weight: bold; }
 
 .jobs .article {
+  margin-bottom: 2em;
+  padding-bottom: 6em;
   position: relative; }
+  @media (min-width: 42.5em) {
+    .jobs .article {
+      margin-bottom: 3em;
+      padding-bottom: 1em; } }
   .jobs .article .left {
     position: absolute;
-    bottom: 0; }
-.jobs .left {
-  padding-left: 10px;
-  padding-right: 10px; }
-  @media (min-width: 42.5em) {
-    .jobs .left {
-      padding-left: 0px;
-      padding-right: 0px; } }
-  .jobs .left .article-image {
-    height: 0; }
+    bottom: 0;
+    margin-bottom: 2em;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px; }
     @media (min-width: 42.5em) {
-      .jobs .left .article-image {
+      .jobs .article .left {
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative;
+        bottom: auto;
+        width: 35%; }
+        .jobs .article .left .article-image {
+          height: 0; } }
+    @media (min-width: 42.5em) and (min-width: 42.5em) {
+      .jobs .article .left .article-image {
+        height: 200px; } }
+    @media (min-width: 42.5em) and (min-width: 60em) {
+      .jobs .article .left .article-image {
         height: 250px; } }
+
+.jobs .article:last-child {
+  margin-bottom: 0; }
 .jobs img {
   display: none; }
   @media (min-width: 42.5em) {
@@ -2151,9 +2265,21 @@ article:last-child {
       width: 100%; }
 
 .contact-text {
-  width: 49%;
-  float: left;
-  margin-bottom: 1em; }
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left; }
+  @media (min-width: 42.5em) {
+    .contact-text {
+      width: 49%;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-bottom: 1em; } }
+  @media (min-width: 42.5em) {
+    .contact-text p a:nth-child(1), .contact-text .tel {
+      pointer-events: none;
+      cursor: default;
+      color: #404041; } }
   .contact-text h2 {
     padding-bottom: 0;
     margin-bottom: 0.5em;

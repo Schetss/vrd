@@ -61,8 +61,8 @@ hr {
 
 
 h1 {
-	@include baseline-dimensions(3,3,3);
 	color: $beta-text-color;
+	@include baseline-dimensions(3,3,3);
 	//font-weight: bold;
 }
 
@@ -88,6 +88,10 @@ h6 {
 
 // other text
 
+
+.nowrap {
+	white-space: nowrap;
+}
 
 p,
 ol,

@@ -1,6 +1,6 @@
 <footer class="holder footer-holder">
 	<div class="footer row">
-		&copy; {$now|date:'Y'} {$siteTitle} opslag &amp; distributie | Jan De Malschelaan 14 | 9140 Temse | T 03/771.09.13 | F 03/771.23.58
+		&copy; {$now|date:'Y'} {$siteTitle} opslag &amp; distributie | <span class="nowrap">Jan De Malschelaan 14</span> | <span class="nowrap">9140 Temse</span> | <span class="nowrap">T 03/771.09.13</span> | <span class="nowrap">F 03/771.23.58</span>
 	</div>
 </footer>
 

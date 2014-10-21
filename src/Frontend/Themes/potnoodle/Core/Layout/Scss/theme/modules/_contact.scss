@@ -3,9 +3,26 @@
 //
 
 .contact-text {
-	width: 49%; 
+	width: 100%;
+	@include px-padding-lr(1,1);
+	
+	@include mq($bp3) {
+		width: 49%;
+		@include px-padding-lr(0,0);
+		margin-bottom: 1em;
+	}
+	
+	@include mq($bp3){
+		p a:nth-child(1), .tel {
+			pointer-events: none;
+			cursor: default;
+			color: $alpha-text-color;
+		}
+
+	}
+
 	float: left;
-	margin-bottom: 1em;
+
 
 	h2 {
 		padding-bottom: 0;

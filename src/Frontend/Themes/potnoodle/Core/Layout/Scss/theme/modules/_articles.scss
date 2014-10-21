@@ -4,7 +4,10 @@
 
 
 .article-index {
-	margin-top: 3em;
+	margin-top: 1em;
+	@include mq($bp3) {
+		margin-top: 3em;
+	}
 }
 
 
@@ -34,12 +37,28 @@
 		.article-image {
 			height: 250px;
 			overflow: hidden;
+			@include mq($bp3) {
+				height: 200px;
+			}
+			@include mq($bp4) {
+				height: 250px;
+			}
+			
 		}
 
 
 		img {
 			min-height: 250px;
 			width: 100%;
+			@include mq($bp3) {
+				min-height: 200px;
+				width: 100%;
+			}
+
+			@include mq($bp4) {
+				min-height: 250px;
+			}
+			
 		}
 
 	}
@@ -96,6 +115,7 @@
 article:last-child {
 	border: 0;
 	padding-bottom: 0em;
+	margin-bottom: 0;
 }
 
 
@@ -130,9 +150,12 @@ article:last-child {
 //
 
 .content {
+	margin-top: 1em;
+
+	@include mq($bp3) {
 		margin-top: 2em;
 		margin-bottom: 2em;
-
+	}
 	 p {
 	 	font-family: $beta-font-family;
 	 	font-size: 1.3em;
@@ -140,14 +163,19 @@ article:last-child {
 	 }
 
 	 img {
-	 	//width: 100%;
-	 	//max-height: 600px;
-	 	margin-left: auto;
-	 	margin-right: auto;
+	 	@include margin-tb(0.1,0.1);
 	 	display: block;
-	 	@include margin-tb(1,1);
-	 	width: 70%;
+	 	width: 110%;
 	 	max-width: none;
+	 	@include px-margin-lr(-1,-1);
+
+
+	 	@include mq($bp3) {
+	 		width: 70%;
+ 		 	@include margin-tb(1,1);
+	 		margin-left: auto;
+	 		margin-right: auto;	
+	 	}
 	 }
 
 	 footer {
@@ -169,28 +197,46 @@ article:last-child {
 
 .jobs {
 	.article {
+		margin-bottom: 2em;
+		padding-bottom: 6em;
 		position: relative;
+
+		@include mq($bp3) {
+			margin-bottom: 3em;
+			padding-bottom: 1em;
+		}
 
 		.left {
 			position: absolute;
 			bottom: 0;
-			//margin-bottom: -3em;
+			margin-bottom: 2em;
+			width: 100%;
+			@include px-padding-lr(1,1);
+
+			@include mq($bp3) {
+				@include px-padding-lr(0,0);
+				position: relative;
+			//	margin: 0;
+				bottom: auto;
+				width: 35%;
+				.article-image {
+					
+					height: 0;
+					
+					@include mq($bp3) {
+						height: 200px;
+					}
+
+					@include mq($bp4) {
+						height: 250px;
+					}
+				}
+			}
 		}
 	}
 
-	.left {
-		@include px-padding-lr(1,1);
-
-		@include mq($bp3) {
-			@include px-padding-lr(0,0);
-		}
-		.article-image {
-			height: 0;
-			@include mq($bp3) {
-				height: 250px;
-			}
-		}
-
+	.article:last-child {
+		margin-bottom: 0;
 	}
 
 	img {
