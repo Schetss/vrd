@@ -18677,17 +18677,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/jquery.onepage-scroll.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/jquery.onepage-scroll.js",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/min\/jquery.onepage-scroll-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/min\/theme-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -18732,28 +18721,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/back-phone.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 58099,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/back-phone.png",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/back-phone.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/phones.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 41891,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/phones.png",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/phones.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/screen.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -18763,16 +18730,14 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/tilted-phone.png": {
-		"fileType": 32768,
-		"ignore": 0,
+	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/screen2.css": {
+		"fileType": 16,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 88112,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/tilted-phone.png",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/tilted-phone.png",
+		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/screen2.css",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputPathIsSetByUser": 0
 		},
 	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/EditorTemplates\/images\/chuck.png": {
 		"fileType": 32768,
@@ -18975,6 +18940,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/screen.scss",
 		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/css\/screen.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/screen2.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/screen2.scss",
+		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/css\/screen2.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
