@@ -7,7 +7,6 @@ var jsTheme =
 		jsTheme.catNav.init();
 		jsTheme.selectNav.init();
 	}
-
 };
 
 jsTheme.forms =
@@ -58,6 +57,7 @@ jsTheme.selectNav =
 	}
 };
 
+
 $(jsTheme.init);
 
 
@@ -90,13 +90,33 @@ $(window).on("load", function() {
  	//$("#main-header-image2 img").remove();
  	$("#main-header-image3 img:not(:first)").remove();
 
+  $("#flexslider-main img:not(:first)").remove();
+
  	$('.main-nav').hide();
 
  	$('.main-nav-trigger').on('click', function(){
  		$('.main-nav').toggle();
  	});
 
+
+  //
+  // gallery immo
+  //
+
+ $('.flexslider ul li img').click(function(){
+     var source = $(this).attr('src');
+    // $('#flexslider-main').src=source;
+    $("#flexslider-main img").attr('src',source);
+  });
+
+
 });
+
+
+
+
+
+
 
 //
 // Company

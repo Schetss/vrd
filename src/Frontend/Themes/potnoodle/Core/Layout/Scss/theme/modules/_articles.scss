@@ -160,23 +160,24 @@ article:last-child {
 	 	font-family: $beta-font-family;
 	 	font-size: 1.15em;
 	 	line-height: 2em;
-	 }
+	 
 
-	 img {
-	 	@include margin-tb(0.1,0.1);
-	 	display: block;
-	 	width: 110%;
-	 	max-width: none;
-	 	@include px-margin-lr(-1,-1);
+		 img {
+		 	@include margin-tb(0.1,0.1);
+		 	display: block;
+		 	width: 110%;
+		 	max-width: none;
+		 	@include px-margin-lr(-1,-1);
 
 
-	 	@include mq($bp3) {
-	 		width: 70%;
- 		 	@include margin-tb(1,1);
-	 		margin-left: auto;
-	 		margin-right: auto;	
-	 	}
-	 }
+		 	@include mq($bp3) {
+		 		width: 70%;
+	 		 	@include margin-tb(1,1);
+		 		margin-left: auto;
+		 		margin-right: auto;	
+		 	}
+		 }
+	}
 
 	 footer {
 	 	border-top: 1px solid $gamma-ui-color;

@@ -3,16 +3,24 @@
 		<div class="bd">
 			<p>{$item.text}</p>
 
-
-			{option:images}
-			<div class="immo-images">
-				 <div id="immo-slide-holder">
-					<div id="immo-slide-runner">
+			<div id="flexslider-main">
+				<span class="flexbox"></span>
+					{option:item.images}
 						{iteration:images}
-							<img src="{$images.sizes.large}" id="slide-img-{$images.id}" class="slide" alt="{$images.title}" title="{$images.title}" />
+						<img class="immo-head-img" src="{$images.sizes.large}"/>
 						{/iteration:images}
-					</div>
-				</div>
+					{/option:item.images}
+			</div>
+			
+			{option:images}
+			<div class="flexslider">
+				<ul class="slides">
+					{iteration:images}
+					<li>
+						<img src="{$images.sizes.large}" id="slide-img-{$images.id}" class="slide" alt="{$images.title}" title="{$images.title}" />
+					</li>
+					{/iteration:images}
+				</ul>
 			</div>
 			
 
@@ -46,3 +54,5 @@
 		</footer>
 	</article>
 </div>
+
+

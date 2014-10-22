@@ -310,10 +310,11 @@
 				margin-top: 250px;
 				text-align: center;
 				padding-top: 10px;
-				font-size: 1.1em;
+				font-size: 1em;			
 			}
 
 			@include mq($bp4) {
+				font-size: 1.1em;			
 				margin-top: 300px;
 			}
 		}
@@ -372,11 +373,12 @@
 				margin-top: 250px;
 				text-align: center;
 				padding-top: 10px;
-				font-size: 1.1em;
+				font-size: 1em;
 			}
 
 			@include mq($bp4) {
 				margin-top: 300px;
+				font-size: 1.1em;			
 			}
 		}
 	}

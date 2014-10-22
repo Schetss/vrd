@@ -1948,9 +1948,10 @@ button {
         margin-top: 250px;
         text-align: center;
         padding-top: 10px;
-        font-size: 1.1em; } }
+        font-size: 1em; } }
     @media (min-width: 60em) {
       #selector .selector-picture p {
+        font-size: 1.1em;
         margin-top: 300px; } }
 #selector .selector-picture-right {
   overflow: hidden;
@@ -2005,10 +2006,11 @@ button {
         margin-top: 250px;
         text-align: center;
         padding-top: 10px;
-        font-size: 1.1em; } }
+        font-size: 1em; } }
     @media (min-width: 60em) {
       #selector .selector-picture-right p {
-        margin-top: 300px; } }
+        margin-top: 300px;
+        font-size: 1.1em; } }
 
 #selector2 {
   display: none;

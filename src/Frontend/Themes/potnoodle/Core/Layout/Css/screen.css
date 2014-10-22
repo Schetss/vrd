@@ -1989,9 +1989,10 @@ button {
         margin-top: 250px;
         text-align: center;
         padding-top: 10px;
-        font-size: 1.1em; } }
+        font-size: 1em; } }
     @media (min-width: 60em) {
       #selector .selector-picture p {
+        font-size: 1.1em;
         margin-top: 300px; } }
 #selector .selector-picture-right {
   overflow: hidden;
@@ -2046,10 +2047,11 @@ button {
         margin-top: 250px;
         text-align: center;
         padding-top: 10px;
-        font-size: 1.1em; } }
+        font-size: 1em; } }
     @media (min-width: 60em) {
       #selector .selector-picture-right p {
-        margin-top: 300px; } }
+        margin-top: 300px;
+        font-size: 1.1em; } }
 
 #selector2 {
   display: none;
@@ -2179,21 +2181,21 @@ article:last-child {
     font-family: "Merriweather", serif;
     font-size: 1.15em;
     line-height: 2em; }
-  .content img {
-    margin-top: 0.15em;
-    margin-bottom: 0.15em;
-    display: block;
-    width: 110%;
-    max-width: none;
-    margin-left: -10px;
-    margin-right: -10px; }
-    @media (min-width: 42.5em) {
-      .content img {
-        width: 70%;
-        margin-top: 1.5em;
-        margin-bottom: 1.5em;
-        margin-left: auto;
-        margin-right: auto; } }
+    .content p img {
+      margin-top: 0.15em;
+      margin-bottom: 0.15em;
+      display: block;
+      width: 110%;
+      max-width: none;
+      margin-left: -10px;
+      margin-right: -10px; }
+      @media (min-width: 42.5em) {
+        .content p img {
+          width: 70%;
+          margin-top: 1.5em;
+          margin-bottom: 1.5em;
+          margin-left: auto;
+          margin-right: auto; } }
   .content footer {
     border-top: 1px solid #bdbcbf;
     border-bottom: 1px solid #bdbcbf;
@@ -2326,6 +2328,39 @@ article:last-child {
     width: 100%; }
     #immo-slide-holder #immo-slide-runner img {
       width: 100%; }
+
+#flexslider-main {
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 370px;
+  overflow: hidden;
+  margin-bottom: 1em;
+  text-align: center;
+  white-space: nowrap; }
+  #flexslider-main .flexbox {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  #flexslider-main img {
+    margin-left: -0.2em;
+    max-height: 370px;
+    max-width: 100%;
+    vertical-align: middle; }
+
+.flexslider {
+  background-color: black; }
+  .flexslider ul {
+    list-style-type: none;
+    padding: 0; }
+    .flexslider ul li {
+      cursor: pointer;
+      float: left;
+      margin-right: 5px;
+      margin-bottom: 5px; }
+      .flexslider ul li img {
+        max-height: 50px;
+        width: auto;
+        display: block; }
 
 .contact-text {
   width: 100%;

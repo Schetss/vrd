@@ -113,4 +113,57 @@
 }
 
 
+//
+// slider
+//
+#flexslider-main {
+	background-color: lighten($gamma-ui-color, 21);
+	width: 100%;
+	height: 370px;
+	overflow: hidden;
+	margin-bottom: 1em;
+	text-align: center;
+	white-space: nowrap;
+	
+	.flexbox {
+		display: inline-block;
+    	height: 100%;
+    	vertical-align: middle;
+	}
+		img {
+			margin-left: -0.2em;
+			max-height: 370px;
+			max-width: 100%;
+			vertical-align: middle;
+		}
+}
+
+
+.flexslider {
+	background-color: black;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		li {
+			cursor: pointer;
+			float: left;
+			margin-right: 5px;
+			margin-bottom: 5px;
+			img {
+				max-height: 50px;
+				width: auto;
+				display: block;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
 
