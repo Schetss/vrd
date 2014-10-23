@@ -2040,6 +2040,29 @@ button {
     width: 100%;
     display: block; }
 
+.page-container {
+  position: relative; }
+  .page-container img {
+    width: 370%;
+    margin-left: -150%; }
+    @media (min-width: 30em) {
+      .page-container img {
+        width: 300%;
+        margin-left: -120%; } }
+
+.wrapper header {
+  position: absolute;
+  width: 100%; }
+
+.comp-text {
+  background-color: transparent;
+  background-color: rgba(7, 102, 177, 0.4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#660766B1,endColorstr=#660766B1);
+  zoom: 1;
+  position: absolute;
+  top: 0;
+  margin-top: 300px; }
+
 body, html {
   margin: 0;
   overflow: hidden;

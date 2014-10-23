@@ -56,25 +56,50 @@
 
 <body class="{$LANGUAGE}" class="comp-body" itemscope itemtype="http://schema.org/WebPage">
   <div class="wrapper">	
-	  <div class="main">
-		<!-- 	{* Header *}
+  				{* Header *}
 			{include:Core/Layout/Templates/NL_Header.tpl}
-		 -->
+		
+	  <div class="main">
 		<section class="page1">
 			<div class="page-container">
-				<p> test </p>
+				<img src="/src/Frontend/Core/Layout/images/company_0.jpg" />
+				<div class="comp-text">
+					{* Page1 position *}
+					{option:positionPage1}
+						{iteration:positionPage1}
+						{option:!positionPage1.blockIsHTML}
+							{$positionPage1.blockContent}
+						{/option:!positionPage1.blockIsHTML}
+						{option:positionPage1.blockIsHTML}
+							{$positionPage1.blockContent}
+						{/option:positionPage1.blockIsHTML}
+						{/iteration:positionPage1}
+					{/option:positionPage1}
+				</div>
 			</div>
 		</section>
 
 		<section class="page2">
 			<div class="page-container">
-					<p> test </p>
+				<img src="/src/Frontend/Core/Layout/images/company_1.jpg" />
 			</div>
 		</section>
 
 		<section class="page3">
 			<div class="page-container">
-					<p> test </p>
+				<img src="/src/Frontend/Core/Layout/images/company_2.jpg" />
+			</div>
+		</section>
+
+		<section class="page4">
+			<div class="page-container">
+				<img src="/src/Frontend/Core/Layout/images/company_3.jpg" />
+			</div>
+		</section>
+
+		<section class="page5">
+			<div class="page-container">
+				<img src="/src/Frontend/Core/Layout/images/company_4.jpg" />
 			</div>
 		</section>
 
