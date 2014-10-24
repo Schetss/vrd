@@ -1,68 +1,31 @@
-<!DOCTYPE html>
-<!--[if IE 7]>         <html lang="{$LANGUAGE}" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="{$LANGUAGE}" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="{$LANGUAGE}" class="no-js"> <!--<![endif]-->
-
-<head>
-	{* Meta *}
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta http-equiv="cleartype" content="on">
-	<meta name="generator" content="Fork CMS" />
-	{$meta}
-	{$metaCustom}
-
-	<title>{$pageTitle}</title>
-
-	<!-- Mobile settings http://t.co/dKP3o1e -->
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	{* Stylesheets *}
-	<link rel="stylesheet" href="{$SITE_URL}/src/Frontend/Themes/potnoodle/Core/Layout/CSS/screen2.css" />
-
-	{* Favicon *}
-	<link rel="icon" href="{$THEME_URL}/favicon.ico" />
-	<!--
-		Place all other favicons in website root (e.g. http://web.dev/favicon.ico).
-		Add your font license here, if necessary.
-	-->
-
-	{* Fonts *}
-
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
-
-	{* Windows 8 tile *}
-	<meta name="application-name" content="{$siteTitle}"/>
-	<meta name="msapplication-TileColor" content="#3380aa"/>
-	<meta name="msapplication-TileImage" content="{$THEME_URL}/tile.png"/>
-
-	{* HTML5 shim and Respond.js: "IE8 and below" support of HTML5 elements and media queries *}
-	<!--[if lt IE 9  & (!IEMobile)]
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<script src="{$THEME_URL}/Core/Js/respond.min.js"></script>
-	<![endif]-->
-
-	{* Custom modernizr build: http://modernizr.com *}
-	<script src="{$THEME_URL}/Core/Js/modernizr.custom.js"></script>
-
-	{* Site wide HTML *}
-	{$siteHTMLHeader}
-
-
-</head>
-
+{include:Core/Layout/Templates/Head2.tpl}
 
 <body class="{$LANGUAGE}" class="comp-body" itemscope itemtype="http://schema.org/WebPage">
   <div class="wrapper">	
-  				{* Header *}
+  			{* Header *}
 			{include:Core/Layout/Templates/NL_Header.tpl}
 		
 	  <div class="main">
 		<section class="page1">
 			<div class="page-container">
-				<img src="/src/Frontend/Core/Layout/images/company_0.jpg" />
+				<div class="comp-text-1">
+				 	<h2>Sinds 1986 gespecialiseerd in</h2>
+					<div class="clear"></div>
+					<div class="comp-nav">
+						<ul>
+							<li><a href="/nl/het-bedrijf/distributie">Distributie</a></li>
+							<li><a href="/nl/het-bedrijf/transport">Transport</a></li>
+							<li><a href="/nl/het-bedrijf/opslag-fijnpicking">Opslag en fijnpicking</a></li>
+							<li><a href="/nl/het-bedrijf/immo">Immo</a></li>
+						</ul>
+					</div>
+				</div>
+				<img src="/src/Frontend/Core/Layout/images/company_0.jpg" />				
+			</div>
+		</section>
+
+		<section class="page2">
+			<div class="page-container">
 				<div class="comp-text">
 					{* Page1 position *}
 					{option:positionPage1}
@@ -76,29 +39,62 @@
 						{/iteration:positionPage1}
 					{/option:positionPage1}
 				</div>
-			</div>
-		</section>
-
-		<section class="page2">
-			<div class="page-container">
 				<img src="/src/Frontend/Core/Layout/images/company_1.jpg" />
 			</div>
 		</section>
 
 		<section class="page3">
-			<div class="page-container">
+			<div class="page-container"><div class="comp-text">
+					{* Page2 position *}
+					{option:positionPage2}
+						{iteration:positionPage2}
+						{option:!positionPage2.blockIsHTML}
+							{$positionPage2.blockContent}
+						{/option:!positionPage2.blockIsHTML}
+						{option:positionPage2.blockIsHTML}
+							{$positionPage2.blockContent}
+						{/option:positionPage2.blockIsHTML}
+						{/iteration:positionPage2}
+					{/option:positionPage2}
+				</div>
 				<img src="/src/Frontend/Core/Layout/images/company_2.jpg" />
 			</div>
 		</section>
 
 		<section class="page4">
 			<div class="page-container">
+				<div class="comp-text">
+					{* Page3 position *}
+					{option:positionPage3}
+						{iteration:positionPage3}
+						{option:!positionPage3.blockIsHTML}
+							{$positionPage3.blockContent}
+						{/option:!positionPage3.blockIsHTML}
+						{option:positionPage3.blockIsHTML}
+							{$positionPage3.blockContent}
+						{/option:positionPage3.blockIsHTML}
+						{/iteration:positionPage3}
+					{/option:positionPage3}
+				</div>
 				<img src="/src/Frontend/Core/Layout/images/company_3.jpg" />
 			</div>
 		</section>
 
 		<section class="page5">
 			<div class="page-container">
+				<div class="comp-text">
+					{* Page4 position *}
+					{option:positionPage4}
+						{iteration:positionPage4}
+						{option:!positionPage4.blockIsHTML}
+							{$positionPage4.blockContent}
+						{/option:!positionPage4.blockIsHTML}
+						{option:positionPage4.blockIsHTML}
+							{$positionPage4.blockContent}
+						{/option:positionPage4.blockIsHTML}
+						{/iteration:positionPage4}
+					{/option:positionPage4}
+				</div>
 				<img src="/src/Frontend/Core/Layout/images/company_4.jpg" />
 			</div>
 		</section>

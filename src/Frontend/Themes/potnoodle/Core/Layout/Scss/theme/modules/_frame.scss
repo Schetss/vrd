@@ -101,8 +101,13 @@
 		position: absolute;
 		top: 0;
 		padding: 0;
-		margin-top: 1.2em;
-		font-size: 2.1em;
+		margin-top: 1.4em;
+		font-size: 1.8em;
+
+		@include mq($bp2) {
+			font-size: 2em;
+			margin-top: 1.2em;
+		}
 
 		@include mq($bp3) {
 			@include px-margin-lr(0,0);
@@ -302,17 +307,18 @@
 		}
 	}
 
+
 	.text {
 		@include px-padding-lr(1,1);
 
 		@include mq($bp3) {
-			@include px-padding-lr(0,0);
+			@include px-padding-lr(5,5);
 		}
 
 		p {
-			//font-family: $delta-font-family;
-			font-size: 1.25em;
-			margin-bottom: 1em;
+			font-family: $beta-font-family;
+		 	font-size: 1.15em;
+		 	line-height: 2.1em;
 		}
 
 		.left {

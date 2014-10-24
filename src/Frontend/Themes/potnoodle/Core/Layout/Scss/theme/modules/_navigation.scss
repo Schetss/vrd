@@ -64,7 +64,6 @@
 			@include padding-tb(0.4,0);
 			//color: darken($alpha-ui-color,12);
 		}
-
 	}
 
 
@@ -139,9 +138,12 @@
 	ul {
 		li {
 			background-color: $beta-text-color;
+			a {
+
+			}
 			a, a:hover, a:visited, a:active {
 				@include padding-tb(0.3,0.3);
-				color: $alpha-ui-color;
+				color: $alpha-ui-color !important;
 				@include px-padding-lr(3,0);
 				font-size: 0.9em;
 			}
@@ -156,7 +158,7 @@
 		.selected {
 			background-color: $alpha-ui-color;
 			a, a:hover, a:visited, a:active {
-				color: $beta-text-color;
+				color: $beta-text-color !important;
 			}
 		}
 
@@ -266,10 +268,12 @@
 
 		
 		@include mq($bp3) {
-			width: 24.9%;
-			margin-right: 0.13%;
+			width: 25%;
+			// margin-right: 0.13%;
 			height: 300px;
 			margin-bottom: 0;
+			border-right: 1px solid $beta-text-color;
+
 		}
 
 		@include mq($bp4) {
@@ -305,12 +309,14 @@
 			@include mq($bp3) {
 				@include background-opacity($alpha-link-color, 0.85);
 				@include px-padding-lr(0,0);
-				width: 24.9%;
+				width: 25%;
 				height: 50px;
 				margin-top: 250px;
 				text-align: center;
 				padding-top: 10px;
 				font-size: 1em;			
+				border-right: 1px solid $beta-text-color;
+
 			}
 
 			@include mq($bp4) {
@@ -327,8 +333,8 @@
 			height: 100px;
 
 		@include mq($bp3) {
-			width: 24.9%;
-			float: right;
+			width: 25%;
+			float: left;
 			height: 300px;
 			margin-bottom: 0;
 		}
@@ -368,7 +374,7 @@
 			@include mq($bp3) {
 				@include background-opacity($alpha-link-color, 0.85);
 				@include px-padding-lr(0,0);
-				width: 24.9%;
+				width: 25%;
 				height: 50px;
 				margin-top: 250px;
 				text-align: center;

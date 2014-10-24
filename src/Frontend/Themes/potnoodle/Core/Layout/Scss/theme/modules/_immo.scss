@@ -74,12 +74,16 @@
 	}
 	
 	a {
-		@include px-padding-lr(2,2);
+		@include px-padding-lr(1,1);
 		@include padding-tb(0.3,0.3);
 		color: $beta-text-color;
 		text-decoration: none;
 		//font-weight: $beta-font-weight;
 		float: left;
+
+		@include mq($bp3) {
+			@include px-padding-lr(2,2);
+		}
 	}
 
 	.selected a {
