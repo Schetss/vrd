@@ -1578,6 +1578,12 @@ button {
     #main .text .right {
       width: 47%;
       float: right; }
+    #main .text h2 {
+      line-height: 2em; }
+    #main .text ul {
+      font-family: "Merriweather", serif;
+      font-size: 1.15em;
+      line-height: 2.1em; }
 
 .doormat-holder {
   padding-bottom: 1.5em; }
@@ -1926,6 +1932,12 @@ button {
   @media (min-width: 60em) {
     #selector .selector-picture {
       height: 350px; } }
+  @media (min-width: 71.25em) {
+    #selector .selector-picture {
+      height: 375px; } }
+  @media (min-width: 137.5em) {
+    #selector .selector-picture {
+      height: 450px; } }
   #selector .selector-picture .selector-img {
     margin-left: auto;
     margin-right: auto;
@@ -1936,6 +1948,9 @@ button {
         max-width: 400px;
         width: auto;
         margin-top: 0; } }
+    @media (min-width: 60em) {
+      #selector .selector-picture .selector-img {
+        min-width: 100%; } }
   #selector .selector-picture p {
     padding-left: 10px;
     padding-right: 0px;
@@ -1970,6 +1985,12 @@ button {
       #selector .selector-picture p {
         font-size: 1.1em;
         margin-top: 300px; } }
+    @media (min-width: 71.25em) {
+      #selector .selector-picture p {
+        margin-top: 325px; } }
+    @media (min-width: 137.5em) {
+      #selector .selector-picture p {
+        margin-top: 400px; } }
 #selector .selector-picture-right {
   overflow: hidden;
   margin-bottom: 0.2em;
@@ -1985,6 +2006,12 @@ button {
   @media (min-width: 60em) {
     #selector .selector-picture-right {
       height: 350px; } }
+  @media (min-width: 71.25em) {
+    #selector .selector-picture-right {
+      height: 375px; } }
+  @media (min-width: 137.5em) {
+    #selector .selector-picture-right {
+      height: 450px; } }
   #selector .selector-picture-right .selector-img {
     margin-left: auto;
     margin-right: auto;
@@ -1995,6 +2022,9 @@ button {
         max-width: 400px;
         width: auto;
         margin-top: 0; } }
+    @media (min-width: 60em) {
+      #selector .selector-picture-right .selector-img {
+        min-width: 100%; } }
   #selector .selector-picture-right p {
     padding-left: 10px;
     padding-right: 0px;
@@ -2028,6 +2058,12 @@ button {
       #selector .selector-picture-right p {
         margin-top: 300px;
         font-size: 1.1em; } }
+    @media (min-width: 71.25em) {
+      #selector .selector-picture-right p {
+        margin-top: 325px; } }
+    @media (min-width: 137.5em) {
+      #selector .selector-picture-right p {
+        margin-top: 400px; } }
 
 #selector2 {
   display: none;
