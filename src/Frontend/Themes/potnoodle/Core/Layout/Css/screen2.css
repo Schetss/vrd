@@ -1414,7 +1414,7 @@ button {
       .main-header .item-title {
         margin-left: 0px;
         margin-right: 0px;
-        margin-bottom: 1.5em;
+        margin-bottom: 1.2em;
         font-size: 2.9em; } }
 
 .main-header-image {
@@ -2102,7 +2102,11 @@ button {
       .page-container img {
         width: 300%;
         margin-left: -120%; } }
-    @media (min-width: 42.5em) {
+    @media (min-width: 60em) {
+      .page-container img {
+        width: 120%;
+        margin-left: -10%; } }
+    @media (min-width: 71.25em) {
       .page-container img {
         width: 100%;
         margin-left: 0; } }
@@ -2118,14 +2122,14 @@ button {
   zoom: 1;
   position: absolute;
   top: 0;
-  margin-top: 140px;
+  margin-top: 120px;
   padding: 1em; }
   @media (min-width: 42.5em) {
     .comp-text {
-      width: 500px;
+      width: 700px;
       margin-top: 400px;
       right: 0;
-      margin-right: 200px;
+      margin-right: 50px;
       padding-left: 40px;
       padding-right: 40px; } }
   .comp-text h2 {
@@ -2138,7 +2142,7 @@ button {
 .comp-text-1 {
   position: absolute;
   top: 0;
-  margin-top: 110px;
+  margin-top: 120px;
   width: 100%; }
   @media (min-width: 42.5em) {
     .comp-text-1 {
@@ -2146,11 +2150,12 @@ button {
   .comp-text-1 h2 {
     color: #f9fdff !important;
     font-weight: 600 !important;
-    font-size: 2em !important;
     max-width: 100%;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.2em !important; }
     @media (min-width: 42.5em) {
       .comp-text-1 h2 {
+        font-size: 2em !important;
         max-width: none;
         text-align: center; } }
 
@@ -2158,7 +2163,7 @@ button {
   margin-top: -1em; }
   @media (min-width: 42.5em) {
     .comp-nav {
-      margin-top: 50px;
+      margin-top: 25px;
       font-size: 0.9em; } }
   .comp-nav ul {
     list-style-type: none;
