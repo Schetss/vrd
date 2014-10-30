@@ -12994,13 +12994,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/src\/Frontend\/Core\/Layout\/images\/selector_1.jpg": {
+	"\/src\/Frontend\/Core\/Layout\/images\/selector_1_.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 934171,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_1.jpg",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_1.jpg",
+		"initialSize": 502042,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_1_.jpg",
+		"outputAbbreviatedPath": "\/src\/Frontend\/Core\/Layout\/images\/selector_1_.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

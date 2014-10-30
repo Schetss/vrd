@@ -2,6 +2,15 @@
 // Layout
 //
 
+
+.extra-title {
+	@include px-padding-lr(1,1);
+
+	@include mq($bp3) {
+		@include px-padding-lr(0,0);
+	}
+}
+
 .contact-text {
 	width: 100%;
 	@include px-padding-lr(1,1);

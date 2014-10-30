@@ -267,6 +267,7 @@
 	
 	@include mq($bp3) {
 		@include px-padding-lr(5,5);
+
 	}
 
 	p {
@@ -281,6 +282,24 @@
 		background-color: $beta-text-color;
 		border-radius: $radius;
 		text-decoration: none;
+		white-space: nowrap;
+	}
+
+
+	@include mq($bp3){
+		a:nth-child(2), a:hover:nth-child(2), a:active:nth-child(2), a:visited:nth-child(2) {
+			pointer-events: none;
+			cursor: default;
+			color: $alpha-text-color;
+			padding: 0em;
+			//padding-left: 0.5em;
+			//padding-right: 0.5em;
+			background-color: $alpha-ui-color;
+			color: $beta-text-color;
+			border-radius: none;
+			text-decoration: none;
+		}
+
 	}
 }
 
