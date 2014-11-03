@@ -31,6 +31,15 @@
 
 	.immo-intro {
 		margin-top: 1em;
+	
+		@include px-padding-lr(1,1);
+
+		@include mq($bp3) {
+			@include px-padding-lr(0,0);	
+		}
+
+
+		
 	}
 
 
