@@ -28,18 +28,14 @@
 	<link rel="icon" href="{$THEME_URL}/favicon.ico" />
 
 	{* Facebook *}
-	{option:item.title}
-	<meta property="og:image" content="{$item.full_url}"/>
-	<meta property="og:image:secure_url" content="{$FRONTEND_FILES_URL}/blog/images/source/{$item.image}" />
-	{/option:item.title}
+	<meta property="og:title" content="VRD">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://vrd.be">
+	<meta property="og:image" content="http://vrd.be/src/Frontend/Core/Layout/images/logo@2x.png">
+	<meta property="og:description" content="Uw partner in opslag, distributie en verhuur!">
 
-	{option:!item.title}
-	<meta property="og:image" content="http://vrd.be"/>
-	<meta property="og:image:secure_url" content="/src/Frontend/Core/Layout/images/logo.png" />
-	{/option:!item.title}
 
 	{* Fonts *}
-
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
 
 	{* Windows 8 tile *}
