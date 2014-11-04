@@ -74,8 +74,6 @@
 
 
 
-
-
 // Baseline mixins
 
 // Vertical padding based on the base line-height
@@ -152,4 +150,24 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+
+//
+// social media
+//
+
+@mixin transition-all($time) {
+    -webkit-transition: all $time+s ease;
+    -moz-transition: all $time+s ease;
+    -o-transition: all $time+s ease;
+    transition: all  $time+s ease;
+}
+
+
+@mixin transition($expression) {
+	-webkit-transition: $expression;
+	-moz-transition: $expression;
+	-o-transition: $expression;
+	transition: $expression;
 }

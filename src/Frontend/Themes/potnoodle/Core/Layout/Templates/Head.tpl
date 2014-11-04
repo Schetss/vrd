@@ -26,10 +26,17 @@
 
 	{* Favicon *}
 	<link rel="icon" href="{$THEME_URL}/favicon.ico" />
-	<!--
-		Place all other favicons in website root (e.g. http://web.dev/favicon.ico).
-		Add your font license here, if necessary.
-	-->
+
+	{* Facebook *}
+	{option:item.title}
+	<meta property="og:image" content="{$item.full_url}"/>
+	<meta property="og:image:secure_url" content="{$FRONTEND_FILES_URL}/blog/images/source/{$item.image}" />
+	{/option:item.title}
+
+	{option:!item.title}
+	<meta property="og:image" content="http://vrd.be"/>
+	<meta property="og:image:secure_url" content="/src/Frontend/Core/Layout/images/logo.png" />
+	{/option:!item.title}
 
 	{* Fonts *}
 

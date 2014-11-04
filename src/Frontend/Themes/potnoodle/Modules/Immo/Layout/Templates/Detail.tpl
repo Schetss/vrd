@@ -3,6 +3,11 @@
 		<div class="bd">
 			<p>{$item.text}</p>
 
+			 <div class="mail-btn">
+                <a href="mailto:raoul@vrd.be?Subject=Offerte:%20{$item.title}" target="_top">Vraag nu een offerte aan</a>
+            </div>
+            
+
 			<div id="flexslider-main">
 				<span class="flexbox"></span>
 					{option:item.images}
@@ -11,6 +16,7 @@
 						{/iteration:images}
 					{/option:item.images}
 			</div>
+
 			
 			{option:images}
 			<div class="flexslider">
@@ -48,6 +54,9 @@
                     {/iteration:related}
                 </div>
 			{/option:related}
+
+            
+            
 		</div>
 		<footer>
 			<a href="{$var|geturlforblock:'Immo'}" title="{$msgToImmoOverview|ucfirst}">{$msgToImmoOverview|ucfirst}</a>

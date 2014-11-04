@@ -27,10 +27,8 @@
 
 	{* Favicon *}
 	<link rel="icon" href="{$THEME_URL}/favicon.ico" />
-	<!--
-		Place all other favicons in website root (e.g. http://web.dev/favicon.ico).
-		Add your font license here, if necessary.
-	-->
+
+	
 
 	{* Fonts *}
 

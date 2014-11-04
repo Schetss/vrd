@@ -37,7 +37,7 @@
                         <div class="immo-intro">    
                             {$immo.introduction}
                         </div>
-
+                        
                     </div>
 
                 </article>

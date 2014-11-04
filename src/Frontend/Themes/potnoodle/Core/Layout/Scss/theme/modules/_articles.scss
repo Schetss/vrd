@@ -119,6 +119,58 @@ article:last-child {
 }
 
 
+
+.mail-btn {
+	// margin-left: auto;
+	// margin-right: auto;
+	text-align: center;
+	margin-top: 1.5em;
+	width: 100%;
+	font-weight: $beta-font-weight;
+
+	a {
+		//background-color: lighten($alpha-ui-color,5);
+
+		background: -webkit-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+		background: -o-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+		background: -moz-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+		background: linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+		background: -ms-gradient($alpha-ui-color 10%, darken($alpha-ui-color,5) 100%);
+
+		border-radius: $radius;		
+		@include padding-tb(0.5,0.5);
+		@include px-padding-lr(2,2);
+		color: $beta-text-color;
+		width: 100%;
+		display: block;
+	}
+
+
+	a:hover, a:active {
+		background: -webkit-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+		background: -o-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+		background: -moz-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+		background: linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+		background: -ms-gradient($alpha-ui-color 10%, darken($alpha-ui-color,10) 100%);
+	}
+
+	a:active {
+		background: -webkit-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+		background: -o-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+		background: -moz-linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+		background: linear-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+		background: -ms-gradient($alpha-ui-color 10%, darken($alpha-ui-color,20) 100%);
+	}
+
+	a:hover, a:active {
+		background-color: lighten($alpha-ui-color,3);
+		text-decoration: none;
+	}
+}
+
+
+
+
 //
 // news
 //
@@ -163,11 +215,11 @@ article:last-child {
 	 
 
 		 img {
-		 	@include margin-tb(0.1,0.1);
+		 	@include margin-tb(0.5,0.5);
 		 	display: block;
-		 	width: 110%;
+		 	width: 100%;
 		 	max-width: none;
-		 	@include px-margin-lr(-1,-1);
+		 	// @include px-margin-lr(-1,-1);
 
 
 		 	@include mq($bp3) {
@@ -248,31 +300,6 @@ article:last-child {
 		}
 	}
 }
-
-.solliciteer {
-	// margin-left: auto;
-	// margin-right: auto;
-	text-align: center;
-	margin-top: 1.5em;
-	width: 100%;
-	font-weight: $beta-font-weight;
-
-	a {
-		background-color: lighten($alpha-ui-color,5);
-		border-radius: $radius;		
-		@include padding-tb(0.5,0.5);
-		@include px-padding-lr(2,2);
-		color: $beta-text-color;
-		width: 100%;
-		display: block;
-	}
-
-	a:hover, a:active {
-		background-color: lighten($alpha-ui-color,3);
-		text-decoration: none;
-	}
-}
-
 
 
 

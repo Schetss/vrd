@@ -7,6 +7,8 @@
 		</div>
 	<![endif]-->
 
+	
+
 	{* Header *}
 	{include:Core/Layout/Templates/NL_Header.tpl}
 

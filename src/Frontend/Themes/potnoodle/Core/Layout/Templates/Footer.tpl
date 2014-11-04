@@ -22,12 +22,11 @@
 
 {* Theme specific Javascript *}
 <script src="{$THEME_URL}/Core/Js/theme.js"></script>
-<!-- <script defer src="{$THEME_URL}/Core/Js/jquery.flexslider.js"></script> -->
+<script src="{$THEME_URL}/Core/Js/rrssb.min.js"></script>
+<script src="{$THEME_URL}/Core/Js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
 <!-- jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script> window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
-<script defer src="../jquery.flexslider.js"></script>
+ <script>window.jQuery || document.write('<script src="js/vendor/jquery.1.10.2.min.js"><\/script>')</script>
 
 
 {* Site wide HTML *}

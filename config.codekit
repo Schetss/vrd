@@ -17074,13 +17074,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/src\/Frontend\/Files\/Jobs\/27\/128x128\/1414661035.jpg": {
+	"\/src\/Frontend\/Files\/Jobs\/27\/128x128\/1415021628.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 17397,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/128x128\/1414661035.jpg",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/128x128\/1414661035.jpg",
+		"inputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/128x128\/1415021628.jpg",
+		"outputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/128x128\/1415021628.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -17173,13 +17173,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/src\/Frontend\/Files\/Jobs\/27\/64x64\/1414661035.jpg": {
+	"\/src\/Frontend\/Files\/Jobs\/27\/64x64\/1415021628.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 5608,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/64x64\/1414661035.jpg",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/64x64\/1414661035.jpg",
+		"inputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/64x64\/1415021628.jpg",
+		"outputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/64x64\/1415021628.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -17228,13 +17228,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/src\/Frontend\/Files\/Jobs\/27\/source\/1414661035.jpg": {
+	"\/src\/Frontend\/Files\/Jobs\/27\/source\/1415021628.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 467201,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/source\/1414661035.jpg",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/source\/1414661035.jpg",
+		"inputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/source\/1415021628.jpg",
+		"outputAbbreviatedPath": "\/src\/Frontend\/Files\/Jobs\/27\/source\/1415021628.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -20784,23 +20784,23 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/jquery.flexslider.js": {
-		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/jquery.flexslider.js",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/min\/jquery.flexslider-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/min\/theme-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/min\/theme-min.js",
 		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/min\/min\/theme-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/modernizr-2.6.2-respond-1.1.0.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/modernizr-2.6.2-respond-1.1.0.min.js",
+		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/min\/modernizr-2.6.2-respond-1.1.0.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -20823,6 +20823,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/respond.min.js",
 		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/min\/respond.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/rrssb.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/rrssb.min.js",
+		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Js\/min\/rrssb.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -20853,15 +20864,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/screen2.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/screen_2.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Css\/screen_2.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -21083,22 +21085,6 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/screen2.scss",
 		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/css\/screen2.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
-	"\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/screen_2.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/Scss\/screen_2.scss",
-		"outputAbbreviatedPath": "\/src\/Frontend\/Themes\/potnoodle\/Core\/Layout\/css\/screen_2.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

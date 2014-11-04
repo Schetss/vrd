@@ -2202,6 +2202,41 @@ article:last-child {
   padding-bottom: 0em;
   margin-bottom: 0; }
 
+.mail-btn {
+  text-align: center;
+  margin-top: 1.5em;
+  width: 100%;
+  font-weight: 700; }
+  .mail-btn a {
+    background: -webkit-linear-gradient(#0766b1 10%, #065898 100%);
+    background: -o-linear-gradient(#0766b1 10%, #065898 100%);
+    background: -moz-linear-gradient(#0766b1 10%, #065898 100%);
+    background: linear-gradient(#0766b1 10%, #065898 100%);
+    background: -ms-gradient(#0766b1 10%, #065898 100%);
+    border-radius: 5px;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #f9fdff;
+    width: 100%;
+    display: block; }
+  .mail-btn a:hover, .mail-btn a:active {
+    background: -webkit-linear-gradient(#0766b1 10%, #054a80 100%);
+    background: -o-linear-gradient(#0766b1 10%, #054a80 100%);
+    background: -moz-linear-gradient(#0766b1 10%, #054a80 100%);
+    background: linear-gradient(#0766b1 10%, #054a80 100%);
+    background: -ms-gradient(#0766b1 10%, #054a80 100%); }
+  .mail-btn a:active {
+    background: -webkit-linear-gradient(#0766b1 10%, #032d4f 100%);
+    background: -o-linear-gradient(#0766b1 10%, #032d4f 100%);
+    background: -moz-linear-gradient(#0766b1 10%, #032d4f 100%);
+    background: linear-gradient(#0766b1 10%, #032d4f 100%);
+    background: -ms-gradient(#0766b1 10%, #032d4f 100%); }
+  .mail-btn a:hover, .mail-btn a:active {
+    background-color: #086ec0;
+    text-decoration: none; }
+
 .index-news {
   margin-top: 2em; }
 
@@ -2230,13 +2265,11 @@ article:last-child {
     font-size: 1.15em;
     line-height: 2.1em; }
     .content p img {
-      margin-top: 0.15em;
-      margin-bottom: 0.15em;
+      margin-top: 0.75em;
+      margin-bottom: 0.75em;
       display: block;
-      width: 110%;
-      max-width: none;
-      margin-left: -10px;
-      margin-right: -10px; }
+      width: 100%;
+      max-width: none; }
       @media (min-width: 42.5em) {
         .content p img {
           width: 70%;
@@ -2290,25 +2323,6 @@ article:last-child {
   @media (min-width: 42.5em) {
     .jobs img {
       display: block; } }
-
-.solliciteer {
-  text-align: center;
-  margin-top: 1.5em;
-  width: 100%;
-  font-weight: 700; }
-  .solliciteer a {
-    background-color: #0874ca;
-    border-radius: 5px;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #f9fdff;
-    width: 100%;
-    display: block; }
-  .solliciteer a:hover, .solliciteer a:active {
-    background-color: #086ec0;
-    text-decoration: none; }
 
 .immo {
   margin-top: 0; }
@@ -2397,7 +2411,8 @@ article:last-child {
   overflow: hidden;
   margin-bottom: 1em;
   text-align: center;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin-top: 3em; }
   #flexslider-main .flexbox {
     display: inline-block;
     height: 100%;
@@ -2458,85 +2473,9 @@ article:last-child {
     margin-top: 0;
     padding-top: 0; }
 
-body {
-  overflow-x: hidden; }
-
-a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #0a88ff; }
-  a:hover {
-    color: shade(#0a88ff, 55%); }
-
-.main-container {
-  padding: 1% 6%; }
-  .main-container h1 {
-    letter-spacing: -.03em;
-    color: #444;
-    margin: 20px 0 10px 0;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-    @media screen and (min-width: 1024px) {
-      .main-container h1 {
-        font-size: 40px; } }
-  .main-container h2 {
-    color: #444; }
-  .main-container p {
-    font-size: 16px;
-    line-height: 1.4em; }
-    @media screen and (min-width: 1024px) {
-      .main-container p {
-        font-size: 20px; } }
-  .main-container img.rrssb-preview {
-    width: 40%;
-    height: auto;
-    float: right;
-    margin: 0 0 1% 1%;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease; }
-    @media screen and (max-width: 400px) {
-      .main-container img.rrssb-preview {
-        width: 60%; } }
-  .main-container small {
-    display: block;
-    margin: 40px 0;
-    font-size: 12px;
-    color: #999; }
-
-hr {
-  background-color: #ddd;
-  border: 0;
-  height: 1px;
-  margin: 0 0 10px 0; }
-
-.share-container {
-  position: relative;
-  padding: 0 0 25px; }
-  @media screen and (max-width: 320px) {
-    .share-container {
-      padding: 0 0 12px; } }
-  .share-container .label {
-    color: #777;
-    display: block;
-    float: left;
-    font-size: 14px;
-    padding: 10px 0 0;
-    width: 115px; }
-    @media screen and (max-width: 400px) {
-      .share-container .label {
-        display: none; } }
-  .share-container .rrssb-buttons {
-    float: left;
-    width: calc(100% - 116px); }
-    @media screen and (max-width: 400px) {
-      .share-container .rrssb-buttons {
-        width: 100%;
-        float: none;
-        clear: both; } }
+.sm {
+  margin-top: 3em;
+  margin-bottom: 3em; }
 
 .rrssb-buttons.large-format li a, .rrssb-buttons.large-format li a .rrssb-text {
   -webkit-backface-visibility: hidden;
@@ -2556,18 +2495,20 @@ hr {
     display: table; }
 
 .rrssb-buttons {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   height: 36px;
   margin: 0;
   padding: 0;
   width: 100%; }
+  .rrssb-buttons li:last-child {
+    padding-right: 0; }
   .rrssb-buttons li {
     float: left;
     height: 100%;
     line-height: 13px;
     list-style: none;
     margin: 0;
-    padding: 0 2.5px; }
+    padding-right: 5px; }
     .rrssb-buttons li.rrssb-email a {
       background-color: #0a88ff; }
       .rrssb-buttons li.rrssb-email a:hover {
@@ -2618,7 +2559,7 @@ hr {
         background-color: #406582; }
     .rrssb-buttons li a {
       background-color: #ccc;
-      border-radius: 2px;
+      border-radius: 0.2em;
       display: block;
       font-size: 11px;
       font-weight: bold;

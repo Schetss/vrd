@@ -19,6 +19,7 @@
 		</div>
 		<div class="bd">
 			<p>{$item.text}</p>
+
 			{option:images}
 			<div class="jobImages">
 				<h3>{$lblImages|ucfirst}</h3>
