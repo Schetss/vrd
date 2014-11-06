@@ -48,7 +48,7 @@ variables that are available:
                     </li>
                     <li class="rrssb-twitter">
                         <!-- Replace href with your Meta and URL information  -->
-                        <a href="http://twitter.com/home?status={$item.title}%20@vrd%20http://vrd.be{$item.full_url}" class="popup">
+                        <a href="http://twitter.com/home?status={$item.title}%20@VRD_Logistiek%20http://vrd.be{$item.full_url}" class="popup">
                             <span class="rrssb-icon">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="28px" height="28px" viewBox="0 0 28 28" enable-background="new 0 0 28 28" xml:space="preserve">
