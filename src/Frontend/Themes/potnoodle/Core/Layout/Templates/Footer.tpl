@@ -24,9 +24,8 @@
 <script src="{$THEME_URL}/Core/Js/theme.js"></script>
 <script src="{$THEME_URL}/Core/Js/rrssb.min.js"></script>
 <script src="{$THEME_URL}/Core/Js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script src="{$THEME_URL}/Core/Js/jquery.1.10.2.min.js"></script>
 
-<!-- jQuery -->
- <script>window.jQuery || document.write('<script src="js/vendor/jquery.1.10.2.min.js"><\/script>')</script>
 
 
 {* Site wide HTML *}

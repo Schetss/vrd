@@ -58,10 +58,12 @@
             
             
 		</div>
+
 		<footer>
 			<a href="{$var|geturlforblock:'Immo'}" title="{$msgToImmoOverview|ucfirst}">{$msgToImmoOverview|ucfirst}</a>
 		</footer>
 	</article>
 </div>
+
 
 
