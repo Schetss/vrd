@@ -27,7 +27,7 @@
                                     <img src="{$immo.images.sizes.large}" alt="{$immo.images.title}" title="{$immo.images.title}" /></a>
                                 {/iteration:immo.images}
                                 <div class="immo-btn">
-                                    <a href="{$immo.full_url}" title="{$immo.title}">Meer informatie</a>
+                                    <a class="immo-btn-link" href="{$immo.full_url}" title="{$immo.title}">Meer informatie</a>
                                 </div>
                             </div>
                         {/option:immo.images}

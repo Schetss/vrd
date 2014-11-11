@@ -2348,6 +2348,7 @@ article:last-child {
         padding-left: 0px;
         padding-right: 0px; } }
   .immo .immo-btn {
+    text-align: center;
     margin-top: -3em;
     position: absolute;
     right: 0; }
@@ -2365,7 +2366,7 @@ article:last-child {
       padding-left: 20px;
       padding-right: 20px;
       color: #f9fdff;
-      width: 180px;
+      width: 190px;
       display: block; }
     .immo .immo-btn a:hover, .immo .immo-btn a:active, .immo .immo-btn a:visited {
       background-color: #086ec0;

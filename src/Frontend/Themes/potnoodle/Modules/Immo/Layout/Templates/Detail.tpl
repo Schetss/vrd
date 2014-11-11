@@ -4,7 +4,7 @@
 			<p>{$item.text}</p>
 
 			 <div class="mail-btn">
-                <a href="mailto:raoul@vrd.be?Subject=Offerte:%20{$item.title}" target="_top">Vraag nu een offerte aan</a>
+                <a class="mail-btn-link" href="mailto:raoul@vrd.be?Subject=Offerte:%20{$item.title}" target="_top">Vraag nu een offerte aan</a>
             </div>
             
 

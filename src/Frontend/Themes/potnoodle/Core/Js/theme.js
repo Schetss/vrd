@@ -100,6 +100,99 @@ $(window).on("load", function() {
 
 
   //
+  // function to get identifier
+  //
+
+
+  $(function() {
+     var iden_id = window.location.pathname;
+     var iden_id2 = iden_id.substring(0,28);
+
+     //
+     // FR changes
+     //
+
+    if(iden_id === "/fr/postes") 
+    {
+      $(function() {
+           var divs = document.getElementsByClassName( 'mail-btn-link' );
+
+           [].slice.call( divs ).forEach(function ( div ) {
+              div.innerHTML = "Appliquer maintenant";
+          });
+
+      }); 
+    }
+
+    else if(iden_id === "/fr/l-entreprise/immo") 
+    {
+      $(function() {
+           var divs = document.getElementsByClassName( 'immo-btn-link' );
+
+           [].slice.call( divs ).forEach(function ( div ) {
+              div.innerHTML = "Plus d'info";
+          });
+      }); 
+    }
+
+    else if(iden_id2 === "/fr/l-entreprise/immo/detail") 
+    {
+      $(function() {
+           var divs = document.getElementsByClassName( 'mail-btn-link' );
+
+           [].slice.call( divs ).forEach(function ( div ) {
+              div.innerHTML = "Demander un devis";
+          });
+      }); 
+    }
+
+    //
+    // EN changes
+    //
+
+    else if(iden_id === "/en/jobs") 
+    {
+      $(function() {
+           var divs = document.getElementsByClassName( 'mail-btn-link' );
+
+           [].slice.call( divs ).forEach(function ( div ) {
+              div.innerHTML = "Apply now";
+          });
+
+      }); 
+    }
+
+    else if(iden_id === "/en/the-company/immo") 
+    {
+      $(function() {
+           var divs = document.getElementsByClassName( 'immo-btn-link' );
+
+           [].slice.call( divs ).forEach(function ( div ) {
+              div.innerHTML = "More information";
+          });
+
+      }); 
+    }
+
+    else if(iden_id2 === "/en/the-company/immo/detail") 
+    {
+      $(function() {
+           var divs = document.getElementsByClassName( 'mail-btn-link' );
+
+           [].slice.call( divs ).forEach(function ( div ) {
+              div.innerHTML = "Request a quote";
+          });
+      }); 
+    }
+
+
+   });
+
+
+
+
+
+  //
   // gallery immo
   //
 
