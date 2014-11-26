@@ -2117,8 +2117,8 @@ button {
 
 .comp-text {
   background-color: transparent;
-  background-color: rgba(7, 102, 177, 0.7);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B30766B1,endColorstr=#B30766B1);
+  background-color: rgba(7, 102, 177, 0.8);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC0766B1,endColorstr=#CC0766B1);
   zoom: 1;
   position: absolute;
   top: 0;
@@ -2126,18 +2126,35 @@ button {
   padding: 1em; }
   @media (min-width: 42.5em) {
     .comp-text {
-      width: 700px;
+      background-color: transparent;
+      background-color: rgba(7, 102, 177, 0.7);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B30766B1,endColorstr=#B30766B1);
+      zoom: 1; } }
+  @media (min-width: 42.5em) {
+    .comp-text {
+      width: 600px;
       margin-top: 400px;
       right: 0;
       margin-right: 50px;
       padding-left: 40px;
       padding-right: 40px; } }
+  @media (min-width: 60em) {
+    .comp-text {
+      width: 700px; } }
   .comp-text h2 {
     color: #f9fdff !important;
-    font-weight: 600 !important; }
+    font-weight: 600 !important;
+    padding-bottom: 0em; }
+    @media (min-width: 42.5em) {
+      .comp-text h2 {
+        padding-bottom: 1em; } }
   .comp-text p {
     color: #f9fdff;
-    font-size: 1.2em; }
+    font-size: 1.1em; }
+    @media (min-width: 42.5em) {
+      .comp-text p {
+        margin-top: 0;
+        font-size: 1.2em; } }
 
 .comp-text-1 {
   position: absolute;

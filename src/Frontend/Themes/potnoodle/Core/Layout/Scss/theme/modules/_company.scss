@@ -36,28 +36,45 @@
 
 
 .comp-text {
-  @include background-opacity($alpha-ui-color, 0.7);
+  @include background-opacity($alpha-ui-color, 0.8);
   position: absolute;
   top: 0;
   margin-top: 120px;
   padding: 1em;
 
   @include mq($bp3) {
-    width: 700px;
+    @include background-opacity($alpha-ui-color, 0.7);
+  }
+
+
+  @include mq($bp3) {
+    width: 600px;
     margin-top: 400px;
     right: 0;
     margin-right: 50px;
     @include px-padding-lr(4,4);
   }
 
+  @include mq($bp4) {
+    width: 700px;
+  }
+
   h2 {
       color: $beta-text-color !important;
       font-weight: 600 !important;
+      padding-bottom: 0em;
+      @include mq($bp3) {
+        padding-bottom: 1em;
+      }
   }
 
   p {
     color: $beta-text-color;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    @include mq($bp3) {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
   }
 }
 

@@ -37,6 +37,8 @@
 			{option:item.image}
 				<div class="image-overlay-detail"></div>
 			{/option:item.image}
+
+			
 			<div class="row main-header-title">
 				{* Page title *}
 				{option:!hideContentTitle}

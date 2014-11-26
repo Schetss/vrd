@@ -174,14 +174,16 @@ $(window).on("load", function() {
       }); 
     }
 
-    else if(iden_id2 === "/en/the-company/immo/detail") 
+    else if(iden_id2 === "/en/the-company/immo/detail/") 
     {
       $(function() {
+          console.log(iden_id2);
            var divs = document.getElementsByClassName( 'mail-btn-link' );
 
            [].slice.call( divs ).forEach(function ( div ) {
               div.innerHTML = "Request a quote";
           });
+
       }); 
     }
 

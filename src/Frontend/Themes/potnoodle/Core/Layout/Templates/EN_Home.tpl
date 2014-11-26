@@ -60,7 +60,7 @@
 			<hr />
 
 			<div class="row">
-				<h3><span class="line-title-text">VRD staat niet stil</span></h3>
+				<h3><span class="line-title-text">VRD is not static</span></h3>
 			</div>
 			<div class="clear"></div>
 		</div>
